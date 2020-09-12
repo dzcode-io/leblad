@@ -1,0 +1,47 @@
+{
+  "name": "leblad-sdk",
+  "version": "1.0.0",
+  "description": "Algerian administrative areas package",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test.watch": "jest --watch",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzcode-io/leblad.git"
+  },
+  "keywords": [
+    "dz",
+    "algeria",
+    "algérie",
+    "wilaya"
+  ],
+  "author": "Fortas Abdeldjalil (https://fcmam5.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dzcode-io/leblad/issues"
+  },
+  "homepage": "https://github.com/dzcode-io/leblad#readme",
+  "devDependencies": {
+    "@stryker-mutator/core": "^3.3.1",
+    "@stryker-mutator/javascript-mutator": "^3.3.1",
+    "@stryker-mutator/jest-runner": "^3.3.1",
+    "@types/jest": "^26.0.13",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  }
+}

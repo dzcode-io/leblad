@@ -1,0 +1,4 @@
+node_modules
+coverage
+# stryker temp files
+.stryker-tmp
