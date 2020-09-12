@@ -9,3 +9,5 @@ tests/*
 jest.config.js
 stryker.conf.js
 update-wilaya-dataset.js
+.stryker-tmp/*
+reports/*

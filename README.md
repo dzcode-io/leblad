@@ -47,3 +47,9 @@ Or this command for the `watch mode`:
 ```
 npm run test.watch
 ```
+
+You can also run [mutation tests](https://en.wikipedia.org/wiki/Mutation_testing) (using [Stryker-mutator](https://stryker-mutator.io/))
+
+```
+npm run test.mutation
+```

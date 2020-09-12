@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "test.watch": "jest --watch",
+    "test.mutation": "stryker run",
     "lint": "eslint .",
     "update-dataset": "node update-wilaya-dataset.js"
   },
