@@ -1,0 +1,11 @@
+.vscode
+.github/*
+coverage/*
+tests/*
+.editorconfig
+.eslintrc.json
+.gitattributes
+.prettierrc
+jest.config.js
+stryker.conf.js
+update-wilaya-dataset.js

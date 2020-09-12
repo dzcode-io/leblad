@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test.watch": "jest --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "update-dataset": "node update-wilaya-dataset.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@stryker-mutator/javascript-mutator": "^3.3.1",
     "@stryker-mutator/jest-runner": "^3.3.1",
     "@types/jest": "^26.0.13",
+    "axios": "^0.20.0",
     "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
