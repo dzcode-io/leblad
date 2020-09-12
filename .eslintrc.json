@@ -23,6 +23,7 @@
         "ecmaVersion": 2018
     },
     "rules": {
+        "semi": "error",
         "no-tabs": "off",
         "indent": "off",
         "no-underscore-dangle": "off"
@@ -30,7 +31,7 @@
     "overrides": [
         {
             "files": [
-                "**/test/**/*.test.js"
+                "**/tests/**/*.test.js"
             ],
             "rules": {
                 "global-require": "off"

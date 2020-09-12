@@ -15,7 +15,7 @@ const VERSION_FILE_PATH = `${DATA_DIRECTORY}/VERSION`;
 
 (async () => {
   // Read the current dataset version
-  const currentVersion = await readFileAsync(VERSION_FILE_PATH, { encoding: 'utf8' })
+  const currentVersion = await readFileAsync(VERSION_FILE_PATH, { encoding: 'utf8' });
 
   // Fetch the latest data from https://github.com/Fcmam5/algeria-api
   const { data } = await axios.get(ALGERIA_API_RELEASES_URL);
@@ -32,14 +32,14 @@ const VERSION_FILE_PATH = `${DATA_DIRECTORY}/VERSION`;
       method: "get",
       url: wilayaListJsonFileUrl,
       responseType: "stream"
-    })
+    });
 
     wilayaListJsonFileResponse.data.pipe(fs.createWriteStream(`${DATA_DIRECTORY}/${WILAYA_LIST_JSON_FILE_NAME}`));
     console.log(`  > Updated ${WILAYA_LIST_JSON_FILE_NAME}`);
-    await writeFileAsync(VERSION_FILE_PATH, tagName)
+    await writeFileAsync(VERSION_FILE_PATH, tagName);
     console.log(`  > Updated local version file`);
 
     console.warn(`\nPlease check "${tagURL}" to double-check if there's any breaking changes before commiting this`);
   }
-})()
+})();
 
