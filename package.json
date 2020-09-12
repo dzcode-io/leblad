@@ -1,6 +1,6 @@
 {
-  "name": "leblad-sdk",
-  "version": "1.0.0",
+  "name": "leblad",
+  "version": "0.0.1",
   "description": "Algerian administrative areas package",
   "main": "src/index.js",
   "scripts": {

@@ -6,12 +6,20 @@ A library providing a list of Algerian administrative areas with many useful API
 
 ### Usage
 
-*tbd*
+#### Node.js
+
+```javascript
+const lebledSdk = require('leblad');
+
+// Example: get a full list of Algerian provinces (Wilayas)
+console.log(leblad.getWilayaList());
+```
 
 #### API
 
-*tbd*
+##### getWilayaList()
 
+Returns a list of Algerian provinces (Wilayas)
 
 ### Local development
 
@@ -53,3 +61,13 @@ You can also run [mutation tests](https://en.wikipedia.org/wiki/Mutation_testing
 ```
 npm run test.mutation
 ```
+
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make by opening an [issue](https://github.com/dzcode-io/leblad/issues/new/choose), sending an e-mail, or any other method with us before making a change.
+
+And also, please make sure to read our [guidelines for contributing](./.github/CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
