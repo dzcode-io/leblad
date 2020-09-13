@@ -12,5 +12,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '/node_modules/',
     '/stryker.conf.js',
+    '/.stryker-tmp/*',
+    '/.reports/*'
   ],
 };

@@ -1,12 +1,14 @@
 {
-  "name": "leblad-sdk",
-  "version": "1.0.0",
+  "name": "leblad",
+  "version": "0.0.1",
   "description": "Algerian administrative areas package",
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
     "test.watch": "jest --watch",
-    "lint": "eslint ."
+    "test.mutation": "stryker run",
+    "lint": "eslint .",
+    "update-dataset": "node update-wilaya-dataset.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "@stryker-mutator/javascript-mutator": "^3.3.1",
     "@stryker-mutator/jest-runner": "^3.3.1",
     "@types/jest": "^26.0.13",
+    "axios": "^0.20.0",
     "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",

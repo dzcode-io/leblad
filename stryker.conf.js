@@ -7,5 +7,10 @@ module.exports = {
 	reporters: ['html', 'clear-text', 'progress', 'dashboard'],
 	testRunner: 'jest',
 	transpilers: [],
-	coverageAnalysis: 'off',
+  coverageAnalysis: 'off',
+  files: [
+    'src/**/*.js',
+    'tests/**/*.js',
+    'data/*.*',
+  ]
 };
