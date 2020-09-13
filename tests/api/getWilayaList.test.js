@@ -1,4 +1,3 @@
- 
 describe('get the full Wilaya list', () => {
   let getWilayaList;
 
