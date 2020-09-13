@@ -17,9 +17,25 @@ console.log(leblad.getWilayaList());
 
 #### API
 
-##### getWilayaList()
+##### getWilayaList(projection?: string[])
 
 Returns a list of Algerian provinces (Wilayas)
+
+**Arguments**
+
+`projection: string[]` (optional) Array of Wilaya Object attributes.
+
+**Examples**
+
+```javascript
+const { getWilayaList } = require('leblad');
+
+const allWilayasDetails = getWilayaList();
+
+// if we only want the wilaya names for example:
+const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
+
+```
 
 ### Local development
 
