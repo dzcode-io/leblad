@@ -84,6 +84,11 @@ When contributing to this repository, please first discuss the change you wish t
 
 And also, please make sure to read our [guidelines for contributing](./.github/CONTRIBUTING.md).
 
+## Similar projects
+
+- [dz-communes](https://github.com/AM-77/dz-communes) An NPM package exposing a list of all of the 48 wilayas of Algeria and their communes.
+- [algeria-api](https://github.com/fcmam5/algeria-api) An web API exposing Wilayas data. We data from that project as a source of truth for ([data/WilayaList.json](./data/WilayaList.json))
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
