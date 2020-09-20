@@ -1,3 +1,5 @@
+const projectWilaya = require('../utils/projections/wilayaProjection');
+
 const getWilayaByZipCode = data =>
 /**
    * Takes a zip code (postal code) and returns it's wilaya.
@@ -11,6 +13,9 @@ const getWilayaByZipCode = data =>
    * @returns { Object | undefined } Returns the target object, or undefined
    */
 
-  (zipCode) => data.find(w => w.postalCodes.includes(zipCode));
+  (zipCode, projection) => {
+    const wilaya = data.find(w => w.postalCodes.includes(zipCode));
+    return projectWilaya(wilaya, projection);
+  };
 
 module.exports = getWilayaByZipCode;
