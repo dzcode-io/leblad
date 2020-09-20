@@ -10,6 +10,7 @@ const getWilayaByZipCode = data =>
    * getWilayaByZipCode(31)
    *
    * @param { Number } zipCode postal code
+   * @param {String[]} projection a list of  wilaya object attributes to keep
    * @returns { Object | undefined } Returns the target object, or undefined
    */
 
