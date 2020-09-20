@@ -4,7 +4,7 @@ const getWilayaByCode = data =>
 /**
  * Takes a wilaya code (matricule) and returns its respective wilaya
  *
- * @example <p> Get Oran wilaya
+ * @example Get Oran wilaya
  * //returns ["Oran"]
  * getWilayaByCode(31)
  *

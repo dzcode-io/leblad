@@ -25,6 +25,17 @@ Returns a list of Algerian provinces (Wilayas)
 
 `projection: string[]` (optional) Array of Wilaya Object attributes.
 
+**Examples**
+
+```javascript
+const { getWilayaList, getWilayaByZipCode } = require('leblad');
+
+const allWilayasDetails = getWilayaList();
+
+// if we only want the wilaya names for example:
+const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
+```
+
 ##### getWilayaByZipCode(zipCode: number, projection?: string[])
 
 Returns a wilaya that includes the given zipCode.
@@ -37,12 +48,7 @@ Returns a wilaya that includes the given zipCode.
 **Examples**
 
 ```javascript
-const { getWilayaList, getWilayaByZipCode } = require('leblad');
-
-const allWilayasDetails = getWilayaList();
-
-// if we only want the wilaya names for example:
-const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
+const { getWilayaByZipCode } = require('leblad');
 
 // To get the wilaya that includes the zip code 1000, We can use getWilayaByZipCode
 // This example will return Adrar { name: "Adrar", ...}
@@ -64,6 +70,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 
 ```javascript
 const { getWilayaByCode } = require('leblad');
+
 console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
 ```
 

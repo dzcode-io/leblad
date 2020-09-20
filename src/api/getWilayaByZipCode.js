@@ -4,7 +4,7 @@ const getWilayaByZipCode = data =>
 /**
    * Takes a zip code (postal code) and returns it's wilaya.
    *
-   * @example <p> Get 1000 wilaya
+   * @example Get 1000 wilaya
    *
    * //returns {mattricule: '1', name: 'Adrar', ...} because the zip code 1000 belongs to Adrar
    * getWilayaByZipCode(31)

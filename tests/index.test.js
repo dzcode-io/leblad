@@ -12,9 +12,11 @@ describe("Le'Bled SDK", () => {
   });
 
   it('should export API functions', () => {
-    expect(lbledSdk).toMatchObject({
+    expect(lbledSdk).toEqual({
       getWilayaList: expect.any(Function),
       getAdjacentWilayas: expect.any(Function),
+      getWilayaByCode: expect.any(Function),
+      getWilayaByZipCode: expect.any(Function),
       utils: {
         wilayaProjection: expect.any(Function),
         isValidWilayaCode: expect.any(Function)
