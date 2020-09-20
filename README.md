@@ -52,7 +52,7 @@ const wilaya = getWilayaByZipCode(1000);
 const wilayaAttributes = getWilayaByZipCode(1000, ['name', 'mattricule']);
 ```
 
-##### getWilayaByCode(wilayaCode?: number)
+##### getWilayaByCode(wilayaCode: number, projection?: string[])
 
 Takes a wilaya code (matricule) and returns the matching wilaya
 
