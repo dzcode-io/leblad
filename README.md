@@ -64,7 +64,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 
 ```javascript
 const { getWilayaByCode } = require('leblad');
-console.log(getWilayaByCode(31)); // will print {name: "Oran"...}
+console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
 ```
 
 ### Local development
