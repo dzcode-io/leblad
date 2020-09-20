@@ -25,7 +25,7 @@ describe('get wilaya by zip code', () => {
 
   beforeEach(() => {
     getWilayaByZipCode = require('../../src/api/getWilayaByZipCode');
-  })
+  });
 
   it('should return return a curried function that returns the data', () => {
     const fn = getWilayaByZipCode(mockData);
