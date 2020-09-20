@@ -10,7 +10,7 @@ const _getData = () => ([...data]);
 
 module.exports = {
   getWilayaList: getWilayaList(_getData()),
-  getAdjacentWilayas: getAdjacentWilayas(_getData())
+  getAdjacentWilayas: getAdjacentWilayas(_getData()),
   getWilayaByCode: getWilayaByCode(_getData()),
   getWilayaByZipCode: getWilayaByZipCode(_getData()),
 };
