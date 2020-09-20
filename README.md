@@ -52,6 +52,21 @@ const wilaya = getWilayaByZipCode(1000);
 const wilayaAttributes = getWilayaByZipCode(1000, ['name', 'mattricule']);
 ```
 
+##### getWilayaByCode(wilayaCode: number, projection?: string[])
+
+Takes a wilaya code (matricule) and returns the matching wilaya
+
+**Arguments**
+
+`wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getWilayaByCode } = require('leblad');
+console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
+```
+
 ### Local development
 
 #### Perquisites
