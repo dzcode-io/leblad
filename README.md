@@ -21,6 +21,10 @@ console.log(leblad.getWilayaList());
 
 Returns a list of Algerian provinces (Wilayas)
 
+**Arguments**
+
+`projection: string[]` (optional) Array of Wilaya Object attributes.
+
 ##### getWilayaByZipCode(zipCode: number, projection?: string[])
 
 Returns a wilaya that includes the given zipCode.
@@ -28,7 +32,6 @@ Returns a wilaya that includes the given zipCode.
 **Arguments**
 
 `projection: string[]` (optional) Array of Wilaya Object attributes.
-
 `zipCode: number` (required) A zip code.
 
 **Examples**
