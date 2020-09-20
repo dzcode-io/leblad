@@ -52,6 +52,35 @@ const { getAdjacentWilayas } = require('leblad');
 
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
+
+#### Helper methods
+
+##### wilayaProjection(wilaya: (object|array), projection?: string[])
+
+Return an object or an array of object with only wilaya attribute you select in the `projection` attributes array.
+
+**Arguments**
+
+`projection: string[]` (optional) Array of Wilaya Object attributes.
+
+**Examples**
+
+```javascript
+const { projectWilaya } = require('leblad').utils;
+
+...
+
+const wilayasNames = projectWilaya(someWilayaObject, ['name', 'name_ar', 'name_en']);
+```
+
+##### isValidWilayaCode(code:number)
+
+Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 and 48).
+
+**Arguments**
+
+`code: number` Wilaya code.
+
 ### Local development
 
 #### Perquisites

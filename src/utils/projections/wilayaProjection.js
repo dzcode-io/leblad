@@ -5,6 +5,8 @@ const _projectWilayaObject = (wilayaObject, attributes) => {
 };
 
 /**
+ * Get a wilaya object or array of object with only the selected properties
+ *
  * @param {Object|Array} data Wilaya data, it could be either a Wilaya object or a list of wilaya Objects
  * @param {String[]} projection a list of attributes to keep
  *
