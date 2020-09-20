@@ -10,9 +10,10 @@ const _projectWilayaObject = (wilayaObject, attributes) => {
  * @param {Object|Array} data Wilaya data, it could be either a Wilaya object or a list of wilaya Objects
  * @param {String[]} projection a list of attributes to keep
  *
+ * @returns {Object | Array | null } returns an object (or array of objects) with only the selected properties in "projection" array
  */
 const projectWilaya = (wilayaData, projection) => {
-  if (!projection) {
+  if (!wilayaData || !projection) {
     return wilayaData;
   }
 
