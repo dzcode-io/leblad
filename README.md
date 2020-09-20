@@ -37,6 +37,21 @@ const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
 
 ```
 
+##### getAdjacentWilayas(wilayaCode?: number)
+
+Takes a wilaya code (matricule) and returns a list of adjacent wilayas codes
+
+**Arguments**
+
+`wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getAdjacentWilayas } = require('leblad');
+
+console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
+```
 ### Local development
 
 #### Perquisites

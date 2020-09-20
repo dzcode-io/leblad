@@ -1,4 +1,5 @@
 const getWilayaList = require('./api/getWilayaList');
+const getAdjacentWilayas = require('./api/getAdjacentWilayas');
 
 const data = require('../data/WilayaList.json');
 
@@ -6,5 +7,6 @@ const _getData = () => ([...data]);
 
 
 module.exports = {
-  getWilayaList: getWilayaList(_getData())
+  getWilayaList: getWilayaList(_getData()),
+  getAdjacentWilayas: getAdjacentWilayas(_getData())
 };
