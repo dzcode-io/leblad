@@ -9,7 +9,7 @@ const getWilayaByCode = data =>
  * getWilayaByCode(31)
  *
  * @param { Number} mattricule The Wilaya's "matricule"
- * @returns { Number[] | undefined } Returns matching wilaya, or undefined
+ * @returns { Object | undefined } Returns matching wilaya, or undefined
  */
   (mattricule, projection) =>  {
     const wilaya = data.find(w => w.mattricule === mattricule);
