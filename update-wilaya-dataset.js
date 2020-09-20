@@ -39,7 +39,7 @@ const VERSION_FILE_PATH = `${DATA_DIRECTORY}/VERSION`;
     await writeFileAsync(VERSION_FILE_PATH, tagName);
     console.log(`  > Updated local version file`);
 
-    console.warn(`\nPlease check "${tagURL}" to double-check if there's any breaking changes before commiting this`);
+    console.warn(`\nPlease check "${tagURL}" to double-check if there's any breaking changes before committing this`);
   }
 })();
 
