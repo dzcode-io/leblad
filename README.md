@@ -28,13 +28,19 @@ Returns a list of Algerian provinces (Wilayas)
 **Examples**
 
 ```javascript
-const { getWilayaList } = require('leblad');
+const { getWilayaList, getWilayaByZipCode } = require('leblad');
 
 const allWilayasDetails = getWilayaList();
 
 // if we only want the wilaya names for example:
 const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
 
+// To get the wilaya that includes the zip code 1000, We can use getWilayaByZipCode
+// This example will return Adrar { name: "Adrar", ...}
+const wilaya = getWilayaByZipCode(1000);
+
+// We can also select only attributes that we want, For example select name and mattricule:
+const wilayaAttributes = getWilayaByZipCode(1000, ['name', 'mattricule']);
 ```
 
 ### Local development
