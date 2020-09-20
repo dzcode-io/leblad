@@ -9,6 +9,7 @@ const getWilayaByCode = data =>
  * getWilayaByCode(31)
  *
  * @param { Number} mattricule The Wilaya's "matricule"
+ * @param {String[]} projection a list of  wilaya object attributes to keep
  * @returns { Object | undefined } Returns matching wilaya, or undefined
  */
   (mattricule, projection) =>  {
