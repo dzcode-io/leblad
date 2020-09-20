@@ -5,7 +5,7 @@ describe('check if a code (matricule) is valid', ()=> {
     expect(isValidWilayaCode(null)).toBe(false);
   });
 
-  it('should return true if the code is greater than 48', () => {
+  it('should return false if the code is greater than 48', () => {
     expect(isValidWilayaCode(49)).toBe(false);
   });
 
