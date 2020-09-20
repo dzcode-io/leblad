@@ -37,6 +37,21 @@ const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
 
 ```
 
+##### getWilayaByCode(wilayaCode?: number)
+
+Takes a wilaya code (matricule) and returns the matching wilaya
+
+**Arguments**
+
+`wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getWilayaByCode } = require('leblad');
+console.log(getWilayaByCode(31)); // will print {name: "Oran"...}
+```
+
 ### Local development
 
 #### Perquisites
