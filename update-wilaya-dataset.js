@@ -11,6 +11,7 @@ const writeFileAsync = promisify(fs.writeFile);
 const ALGERIA_API_RELEASES_URL = 'https://api.github.com/repos/fcmam5/algeria-api/releases/latest';
 const DATA_DIRECTORY = 'data';
 const WILAYA_LIST_JSON_FILE_NAME = 'WilayaList.json';
+const WILAYA_LIST_MINIFIED_JSON_FILE_NAME = 'WilayaList.min.json';
 const VERSION_FILE_PATH = `${DATA_DIRECTORY}/VERSION`;
 
 (async () => {
@@ -27,7 +28,7 @@ const VERSION_FILE_PATH = `${DATA_DIRECTORY}/VERSION`;
     console.warn(`⚠️ Another dataset version is present! Gonna update from "${currentVersion}" to "${tagName}"`);
 
     // Write data to data/wilayalist.json
-    const wilayaListJsonFileUrl = assets.find(asset => asset.name === WILAYA_LIST_JSON_FILE_NAME).browser_download_url;
+    const wilayaListJsonFileUrl = assets.find(asset => asset.name === WILAYA_LIST_MINIFIED_JSON_FILE_NAME).browser_download_url;
     const wilayaListJsonFileResponse = await axios({
       method: "get",
       url: wilayaListJsonFileUrl,

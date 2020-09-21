@@ -28,7 +28,9 @@
     "indent": "error",
     "no-underscore-dangle": "off",
     "no-trailing-spaces": "error",
-    "comma-spacing": "error"
+    "comma-spacing": "error",
+    "quote-props": "error",
+    "key-spacing": "error"
   },
   "overrides": [
     {

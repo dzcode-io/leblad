@@ -25,6 +25,17 @@ Returns a list of Algerian provinces (Wilayas)
 
 `projection: string[]` (optional) Array of Wilaya Object attributes.
 
+**Examples**
+
+```javascript
+const { getWilayaList, getWilayaByZipCode } = require('leblad');
+
+const allWilayasDetails = getWilayaList();
+
+// if we only want the wilaya names for example:
+const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
+```
+
 ##### getWilayaByZipCode(zipCode: number, projection?: string[])
 
 Returns a wilaya that includes the given zipCode.
@@ -37,12 +48,7 @@ Returns a wilaya that includes the given zipCode.
 **Examples**
 
 ```javascript
-const { getWilayaList, getWilayaByZipCode } = require('leblad');
-
-const allWilayasDetails = getWilayaList();
-
-// if we only want the wilaya names for example:
-const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
+const { getWilayaByZipCode } = require('leblad');
 
 // To get the wilaya that includes the zip code 1000, We can use getWilayaByZipCode
 // This example will return Adrar { name: "Adrar", ...}
@@ -64,6 +70,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 
 ```javascript
 const { getWilayaByCode } = require('leblad');
+
 console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
 ```
 
@@ -82,6 +89,35 @@ const { getAdjacentWilayas } = require('leblad');
 
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
+
+#### Helper methods
+
+##### wilayaProjection(wilaya: (object|array), projection?: string[])
+
+Return an object or an array of object with only wilaya attribute you select in the `projection` attributes array.
+
+**Arguments**
+
+`projection: string[]` (optional) Array of Wilaya Object attributes.
+
+**Examples**
+
+```javascript
+const { projectWilaya } = require('leblad').utils;
+
+...
+
+const wilayasNames = projectWilaya(someWilayaObject, ['name', 'name_ar', 'name_en']);
+```
+
+##### isValidWilayaCode(code:number)
+
+Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 and 48).
+
+**Arguments**
+
+`code: number` Wilaya code.
+
 ### Local development
 
 #### Perquisites
@@ -128,6 +164,11 @@ npm run test.mutation
 When contributing to this repository, please first discuss the change you wish to make by opening an [issue](https://github.com/dzcode-io/leblad/issues/new/choose), sending an e-mail, or any other method with us before making a change.
 
 And also, please make sure to read our [guidelines for contributing](./.github/CONTRIBUTING.md).
+
+## Similar projects
+
+- [dz-communes](https://github.com/AM-77/dz-communes) An NPM package exposing a list of all of the 48 wilayas of Algeria and their communes.
+- [algeria-api](https://github.com/fcmam5/algeria-api) An web API exposing Wilayas data. We data from that project as a source of truth for ([data/WilayaList.json](./data/WilayaList.json))
 
 ## License
 
