@@ -9,7 +9,7 @@ A library providing a list of Algerian administrative areas with many useful API
 #### Node.js
 
 ```javascript
-const lebledSdk = require('leblad');
+const lebledSdk = require('@dzcode-io/leblad');
 
 // Example: get a full list of Algerian provinces (Wilayas)
 console.log(leblad.getWilayaList());
@@ -28,7 +28,7 @@ Returns a list of Algerian provinces (Wilayas)
 **Examples**
 
 ```javascript
-const { getWilayaList, getWilayaByZipCode } = require('leblad');
+const { getWilayaList, getWilayaByZipCode } = require('@dzcode-io/leblad');
 
 const allWilayasDetails = getWilayaList();
 
@@ -48,7 +48,7 @@ Returns a wilaya that includes the given zipCode.
 **Examples**
 
 ```javascript
-const { getWilayaByZipCode } = require('leblad');
+const { getWilayaByZipCode } = require('@dzcode-io/leblad');
 
 // To get the wilaya that includes the zip code 1000, We can use getWilayaByZipCode
 // This example will return Adrar { name: "Adrar", ...}
@@ -70,7 +70,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 **Examples**
 
 ```javascript
-const { getWilayaByCode } = require('leblad');
+const { getWilayaByCode } = require('@dzcode-io/leblad');
 
 console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
 ```
@@ -86,7 +86,7 @@ Takes a wilaya code (matricule) and returns a list of adjacent wilayas codes
 **Examples**
 
 ```javascript
-const { getAdjacentWilayas } = require('leblad');
+const { getAdjacentWilayas } = require('@dzcode-io/leblad');
 
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
@@ -105,7 +105,7 @@ Return an object or an array of object with only wilaya attribute you select in 
 **Examples**
 
 ```javascript
-const { projectWilaya } = require('leblad').utils;
+const { projectWilaya } = require('@dzcode-io/leblad').utils;
 
 ...
 
