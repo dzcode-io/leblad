@@ -13,6 +13,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "abachi",
+      "name": "Nasser Abachi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12300606?v=4",
+      "profile": "http://abachi.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
