@@ -9,7 +9,7 @@ A library providing a list of Algerian administrative areas with many useful API
 #### Node.js
 
 ```javascript
-const lebledSdk = require('leblad');
+const lebledSdk = require('@dzcode-io/leblad');
 
 // Example: get a full list of Algerian provinces (Wilayas)
 console.log(leblad.getWilayaList());
@@ -25,10 +25,11 @@ Returns a list of Algerian provinces (Wilayas)
 
 - `projection: string[]` (optional) Array of Wilaya Object attributes to keep.
 
+
 **Examples**
 
 ```javascript
-const { getWilayaList, getWilayaByZipCode } = require('leblad');
+const { getWilayaList, getWilayaByZipCode } = require('@dzcode-io/leblad');
 
 const allWilayasDetails = getWilayaList();
 
@@ -42,13 +43,14 @@ Returns a wilaya that includes the given zipCode.
 
 **Arguments**
 
+- `zipCode: number` (**required**) A zip code
 - `projection: string[]` (optional) Array of Wilaya Object attributes to keep
-- `zipCode: number` (required) A zip code
+
 
 **Examples**
 
 ```javascript
-const { getWilayaByZipCode } = require('leblad');
+const { getWilayaByZipCode } = require('@dzcode-io/leblad');
 
 // To get the wilaya that includes the zip code 1000, We can use getWilayaByZipCode
 // This example will return Adrar { name: "Adrar", ...}
@@ -64,17 +66,18 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 
 **Arguments**
 
-- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"  
+- `projection: string[]` (optional) Array of Wilaya Object attributes
 
 **Examples**
 
 ```javascript
-const { getWilayaByCode } = require('leblad');
+const { getWilayaByCode } = require('@dzcode-io/leblad');
 
 console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
 ```
 
-#### getAdjacentWilayas(wilayaCode?: number)
+##### getAdjacentWilayas(wilayaCode: number)
 
 Takes a wilaya code (matricule) and returns a list of adjacent wilayas codes
 
@@ -85,7 +88,7 @@ Takes a wilaya code (matricule) and returns a list of adjacent wilayas codes
 **Examples**
 
 ```javascript
-const { getAdjacentWilayas } = require('leblad');
+const { getAdjacentWilayas } = require('@dzcode-io/leblad');
 
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
@@ -132,12 +135,13 @@ Return an object or an array of object with only wilaya attribute you select in 
 
 **Arguments**
 
-- `projection: string[]` (optional) Array of Wilaya Object attributes.
+- `wilaya: (object|array)` (**required**) A wilaya object or an array of wilaya objects  
+- `projection: string[]` (optional) Array of Wilaya Object attributes
 
 **Examples**
 
 ```javascript
-const { projectWilaya } = require('leblad').utils;
+const { projectWilaya } = require('@dzcode-io/leblad').utils;
 
 ...
 
@@ -150,8 +154,7 @@ Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 a
 
 **Arguments**
 
-- `code: number` Wilaya code.
-
+- `code: number` (**required**) Wilaya code
 
 ## Local development
 
