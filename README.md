@@ -4,6 +4,7 @@ A library providing a list of Algerian administrative areas with many useful API
 
 ## Getting started
 
+***
 ### Usage
 
 #### Node.js
@@ -15,15 +16,16 @@ const lebledSdk = require('leblad');
 console.log(leblad.getWilayaList());
 ```
 
-#### API
+***
+## API
 
-##### getWilayaList(projection?: string[])
+ #### getWilayaList(projection?: string[])
 
 Returns a list of Algerian provinces (Wilayas)
 
 **Arguments**
 
-`projection: string[]` (optional) Array of Wilaya Object attributes.
+`projection: string[]` (optional) Array of Wilaya Object attributes to keep.
 
 **Examples**
 
@@ -36,13 +38,13 @@ const allWilayasDetails = getWilayaList();
 const wilayasNames = getWilayaList(['name', 'name_ar', 'name_en']);
 ```
 
-##### getWilayaByZipCode(zipCode: number, projection?: string[])
+#### getWilayaByZipCode(zipCode: number, projection?: string[])
 
 Returns a wilaya that includes the given zipCode.
 
 **Arguments**
 
-`projection: string[]` (optional) Array of Wilaya Object attributes.
+`projection: string[]` (optional) Array of Wilaya Object attributes to keep.
 `zipCode: number` (required) A zip code.
 
 **Examples**
@@ -58,7 +60,7 @@ const wilaya = getWilayaByZipCode(1000);
 const wilayaAttributes = getWilayaByZipCode(1000, ['name', 'mattricule']);
 ```
 
-##### getWilayaByCode(wilayaCode: number, projection?: string[])
+#### getWilayaByCode(wilayaCode: number, projection?: string[])
 
 Takes a wilaya code (matricule) and returns the matching wilaya
 
@@ -74,7 +76,7 @@ const { getWilayaByCode } = require('leblad');
 console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
 ```
 
-##### getAdjacentWilayas(wilayaCode?: number)
+#### getAdjacentWilayas(wilayaCode?: number)
 
 Takes a wilaya code (matricule) and returns a list of adjacent wilayas codes
 
@@ -90,7 +92,7 @@ const { getAdjacentWilayas } = require('leblad');
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
 
-##### getZipCodesForWilaya(wilayaCode?: number)
+#### getZipCodesForWilaya(wilayaCode?: number)
 
 Takes a wilaya code (matricule) and returns a list of Respective Zip-Codes for that wilaya
 
@@ -106,9 +108,28 @@ const { getZipCodesForWilaya } = require('leblad');
 console.log(getZipCodesForWilaya(31)); //returns list of zip codes for wilaya 31
 ```
 
-#### Helper methods
+#### getDairatsForWilaya(wilayaCode: number, projection?: string[])
 
-##### wilayaProjection(wilaya: (object|array), projection?: string[])
+Takes a wilaya code (matricule) ans returns list of all dairats of that wilaya.
+
+
+**Arguments**
+
+`wilayaCode: number` (**required**) the Wilaya's "matricule".
+`projection: string[]` (optional) Array of Wilaya Object attributes to keep.
+
+**Examples**
+```javascript
+const { getDairatsForWilaya } = require('leblad');
+
+console.log(getDairatsForWilaya(3)); //returns list of dairats for wilaya 3
+```
+
+***
+### Helper methods
+
+
+#### wilayaProjection(wilaya: (object|array), projection?: string[])
 
 Return an object or an array of object with only wilaya attribute you select in the `projection` attributes array.
 
@@ -126,7 +147,7 @@ const { projectWilaya } = require('leblad').utils;
 const wilayasNames = projectWilaya(someWilayaObject, ['name', 'name_ar', 'name_en']);
 ```
 
-##### isValidWilayaCode(code:number)
+#### isValidWilayaCode(code:number)
 
 Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 and 48).
 
@@ -134,7 +155,9 @@ Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 a
 
 `code: number` Wilaya code.
 
-### Local development
+***
+
+## Local development
 
 #### Perquisites
 
