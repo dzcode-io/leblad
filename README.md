@@ -4,7 +4,6 @@ A library providing a list of Algerian administrative areas with many useful API
 
 ## Getting started
 
-***
 ### Usage
 
 #### Node.js
@@ -16,7 +15,6 @@ const lebledSdk = require('leblad');
 console.log(leblad.getWilayaList());
 ```
 
-***
 ## API
 
  #### getWilayaList(projection?: string[])
@@ -125,8 +123,7 @@ const { getDairatsForWilaya } = require('leblad');
 console.log(getDairatsForWilaya(3)); //returns list of dairats for wilaya 3
 ```
 
-***
-### Helper methods
+## Helper methods
 
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
@@ -155,7 +152,6 @@ Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 a
 
 `code: number` Wilaya code.
 
-***
 
 ## Local development
 
