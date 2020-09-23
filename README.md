@@ -1,9 +1,8 @@
 # Le'Blad
+[<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-[<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad)
 
 A library providing a list of Algerian administrative areas with many useful APIs.
 
@@ -11,13 +10,10 @@ A library providing a list of Algerian administrative areas with many useful API
 
 ### Usage
 
-#### Node.js
+### Installation
 
-```javascript
-const lebledSdk = require('@dzcode-io/leblad');
-
-// Example: get a full list of Algerian provinces (Wilayas)
-console.log(leblad.getWilayaList());
+```
+npm install @dzcode-io/leblad --save
 ```
 
 ## API
@@ -199,21 +195,6 @@ You can also run [mutation tests](https://en.wikipedia.org/wiki/Mutation_testing
 npm run test.mutation
 ```
 
-## Contributing
-
-When contributing to this repository, please first discuss the change you wish to make by opening an [issue](https://github.com/dzcode-io/leblad/issues/new/choose), sending an e-mail, or any other method with us before making a change.
-
-And also, please make sure to read our [guidelines for contributing](./.github/CONTRIBUTING.md).
-
-## Similar projects
-
-- [dz-communes](https://github.com/AM-77/dz-communes) An NPM package exposing a list of all of the 48 wilayas of Algeria and their communes.
-- [algeria-api](https://github.com/fcmam5/algeria-api) An web API exposing Wilayas data. We data from that project as a source of truth for ([data/WilayaList.json](./data/WilayaList.json))
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -232,3 +213,18 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make by opening an [issue](https://github.com/dzcode-io/leblad/issues/new/choose), sending an e-mail, or any other method with us before making a change.
+
+And also, please make sure to read our [guidelines for contributing](./.github/CONTRIBUTING.md).
+
+## Similar projects
+
+- [dz-communes](https://github.com/AM-77/dz-communes) An NPM package exposing a list of all of the 48 wilayas of Algeria and their communes.
+- [algeria-api](https://github.com/fcmam5/algeria-api) An web API exposing Wilayas data. We data from that project as a source of truth for ([data/WilayaList.json](./data/WilayaList.json))
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
