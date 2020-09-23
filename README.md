@@ -23,7 +23,7 @@ Returns a list of Algerian provinces (Wilayas)
 
 **Arguments**
 
-`projection: string[]` (optional) Array of Wilaya Object attributes to keep.
+- `projection: string[]` (optional) Array of Wilaya Object attributes to keep.
 
 **Examples**
 
@@ -42,8 +42,8 @@ Returns a wilaya that includes the given zipCode.
 
 **Arguments**
 
-`projection: string[]` (optional) Array of Wilaya Object attributes to keep.
-`zipCode: number` (required) A zip code.
+- `projection: string[]` (optional) Array of Wilaya Object attributes to keep
+- `zipCode: number` (required) A zip code
 
 **Examples**
 
@@ -64,7 +64,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 
 **Arguments**
 
-`wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
 
 **Examples**
 
@@ -80,7 +80,7 @@ Takes a wilaya code (matricule) and returns a list of adjacent wilayas codes
 
 **Arguments**
 
-`wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
 
 **Examples**
 
@@ -96,7 +96,7 @@ Takes a wilaya code (matricule) and returns a list of Respective Zip-Codes for t
 
 **Arguments**
 
-`wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
 
 **Examples**
 
@@ -113,8 +113,8 @@ Takes a wilaya code (matricule) ans returns list of all dairats of that wilaya.
 
 **Arguments**
 
-`wilayaCode: number` (**required**) the Wilaya's "matricule".
-`projection: string[]` (optional) Array of Wilaya Object attributes to keep.
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `projection: string[]` (optional) Array of Wilaya Object attributes to keep
 
 **Examples**
 ```javascript
@@ -132,7 +132,7 @@ Return an object or an array of object with only wilaya attribute you select in 
 
 **Arguments**
 
-`projection: string[]` (optional) Array of Wilaya Object attributes.
+- `projection: string[]` (optional) Array of Wilaya Object attributes.
 
 **Examples**
 
@@ -150,7 +150,7 @@ Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 a
 
 **Arguments**
 
-`code: number` Wilaya code.
+- `code: number` Wilaya code.
 
 
 ## Local development
