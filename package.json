@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Algerian administrative areas package",
   "main": "src/index.js",
+  "private": false,
   "scripts": {
     "test": "jest",
     "test.watch": "jest --watch",
