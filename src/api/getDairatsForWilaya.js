@@ -8,7 +8,7 @@ const getDairatsForWilaya = data =>
  * getDairatsForWilaya(31)
  *
  * @param { Number} mattricule The Wilaya's "matricule"
- * @param {String[]} projection a list of wilaya object attributes to keep
+ * @param {String[]} projection a list of daira object attributes to keep
  * @returns { object[] | undefined } Returns All dairats for wilaya, or undefined
  */
 
