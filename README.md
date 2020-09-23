@@ -1,5 +1,7 @@
 # Le'Blad
 
+[<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad)
+
 A library providing a list of Algerian administrative areas with many useful APIs.
 
 ## Getting started
@@ -17,14 +19,13 @@ console.log(leblad.getWilayaList());
 
 ## API
 
- #### getWilayaList(projection?: string[])
+#### getWilayaList(projection?: string[])
 
 Returns a list of Algerian provinces (Wilayas)
 
 **Arguments**
 
 - `projection: string[]` (optional) Array of Wilaya Object attributes to keep.
-
 
 **Examples**
 
@@ -45,7 +46,6 @@ Returns a wilaya that includes the given zipCode.
 
 - `zipCode: number` (**required**) A zip code
 - `projection: string[]` (optional) Array of Wilaya Object attributes to keep
-
 
 **Examples**
 
@@ -104,7 +104,7 @@ Takes a wilaya code (matricule) and returns a list of Respective Zip-Codes for t
 **Examples**
 
 ```javascript
-const { getZipCodesForWilaya } = require('leblad');
+const { getZipCodesForWilaya } = require('@dzcode-io/leblad');
 
 console.log(getZipCodesForWilaya(31)); //returns list of zip codes for wilaya 31
 ```
@@ -113,21 +113,20 @@ console.log(getZipCodesForWilaya(31)); //returns list of zip codes for wilaya 31
 
 Takes a wilaya code (matricule) ans returns list of all dairats of that wilaya.
 
-
 **Arguments**
 
 - `wilayaCode: number` (**required**) the Wilaya's "matricule"
 - `projection: string[]` (optional) Array of Wilaya Object attributes to keep
 
 **Examples**
+
 ```javascript
-const { getDairatsForWilaya } = require('leblad');
+const { getDairatsForWilaya } = require('@dzcode-io/leblad');
 
 console.log(getDairatsForWilaya(3)); //returns list of dairats for wilaya 3
 ```
 
 ## Helper methods
-
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
 
