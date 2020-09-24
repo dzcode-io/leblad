@@ -31,6 +31,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ZibanPirate",
+      "name": "Zakaria Mansouri",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20110076?v=4",
+      "profile": "http://zakiii.com",
+      "contributions": [
+        "tool",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
