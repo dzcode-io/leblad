@@ -6,6 +6,16 @@
   "commit": false,
   "contributors": [
     {
+      "login": "ZibanPirate",
+      "name": "Zakaria Mansouri",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20110076?v=4",
+      "profile": "http://zakiii.com",
+      "contributions": [
+        "tool",
+        "review"
+      ]
+    },
+    {
       "login": "oussamabouchikhi",
       "name": "Oussama Bouchikhi",
       "avatar_url": "https://avatars0.githubusercontent.com/u/45850487?v=4",
@@ -30,16 +40,6 @@
       "profile": "https://github.com/anuragsati",
       "contributions": [
         "code"
-      ]
-    },
-    {
-      "login": "ZibanPirate",
-      "name": "Zakaria Mansouri",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/20110076?v=4",
-      "profile": "http://zakiii.com",
-      "contributions": [
-        "tool",
-        "review"
       ]
     }
   ],
