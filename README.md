@@ -126,6 +126,22 @@ const { getDairatsForWilaya } = require('@dzcode-io/leblad');
 console.log(getDairatsForWilaya(3)); //returns list of dairats for wilaya 3
 ```
 
+#### getWilayaByPhoneCode(phoneCode: number, projection?: string[])
+
+Takes a phone code and returns the matching wilaya.
+
+**Arguments**
+
+- `phoneCode: number|string` (**required**) the Wilaya's "phoneCode" or the full phone number
+- `projection: string[]` (optional) Array of Wilaya Object attributes to keep
+
+**Examples**
+
+```javascript
+const { getWilayaByPhoneCode } = require('@dzcode-io/leblad');
+
+console.log(getWilayaByPhoneCode(34)); //will the wilaya object ({name: "Béjaïa"...})
+```
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
