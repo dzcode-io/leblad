@@ -37,27 +37,53 @@ describe('get matching wilaya', ()=> {
     expect(result).toBeUndefined();
   });
 
-  it('should return matching wilaya array when giving phone code', () => {
+  it('should return the matching wilayas if the given phone code number is valid', () => {
     const result = getWilayaByPhoneCode(mockData)(34);
 
-    expect(result).toEqual( {
+    expect(result).toEqual({
       mattricule: 6,
       name: "BEJAIA",
       phoneCodes: [34],
     });
   });
 
-  it('should return an array of matching wilayas for a given phone number', () => {
+  it('should return matching wilayas if the given phone code is valid', () => {
+    const result = getWilayaByPhoneCode(mockData)("34");
+
+    expect(result).toEqual({
+      mattricule: 6,
+      name: "BEJAIA",
+      phoneCodes: [34],
+    });
+  });
+
+  it('should return undefined if the given phone code is empty', () => {
+    const result = getWilayaByPhoneCode(mockData)("");
+
+    expect(result).toBeUndefined();
+  });
+
+  it('should return the matching wilayas if the phone number is valid', () => {
     const result = getWilayaByPhoneCode(mockData)('0342345678');
 
-    expect(result).toEqual( {
+    expect(result).toEqual({
       mattricule: 6,
       name: "BEJAIA",
       phoneCodes: [34],
     });
   });
 
-  it('should return undefined if the given number is invalid', () => {
+  it('should return the matching wilayas if the phone number is valid without the 0 in the begininng', () => {
+    const result = getWilayaByPhoneCode(mockData)('342345678');
+
+    expect(result).toEqual({
+      mattricule: 6,
+      name: "BEJAIA",
+      phoneCodes: [34],
+    });
+  });
+
+  it('should return undefined if the given phone number is invalid', () => {
     const result = getWilayaByPhoneCode(mockData)('03d2345678');
 
     expect(result).toBeUndefined();
