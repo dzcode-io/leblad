@@ -14,10 +14,20 @@ const getWilayaByPhoneCode = data =>
 * @returns { Object | undefined } Returns the target object, or undefined
 */
   (phoneCode, projection) => {
-    const phoneCodeVar =  typeof phoneCode === "number"
-      ? phoneCode
-      : parseInt(phoneCode.substring(1, 3), 10);
-    const wilaya = data.find(w => w.phoneCodes.includes(phoneCodeVar));
+    let phoneCodeVar;
+    if (typeof phoneCode === 'number') {
+      phoneCodeVar = phoneCode;
+    } else {
+      const isPhoneNumberBeginWithZero = phoneCode[0] === '0';
+      const substringBegin = isPhoneNumberBeginWithZero ? 1 : 0;
+      const substringEnd = isPhoneNumberBeginWithZero ? 3 : 2;
+      phoneCodeVar =
+      phoneCode.length > 3
+        ? parseInt(phoneCode.substring(substringBegin, substringEnd), 10)
+        : parseInt(phoneCode, 10);
+    }
+    const wilaya = data.find((w) => w.phoneCodes.includes(phoneCodeVar));
     return projectWilaya(wilaya, projection);
   };
+
 module.exports = getWilayaByPhoneCode;
