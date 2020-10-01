@@ -16,7 +16,73 @@ const projectWilaya = (wilayaData, projection) => {
   if (!wilayaData || !projection) {
     return wilayaData;
   }
-
+  if (Array.isArray(projection)) {
+    if (!Array.isArray(wilayaData)) {
+        const data = {}
+        for (let i=0; i < projection.length; i++) {
+            const field = projection[i]
+            if (field.includes('.')) {
+                const splitFields = projection.split('.')
+                let value = wilayaData[splitFields[0]];
+                for (let b=1; b < splitFields.length; b++) {
+                    if (Array.isArray(value)) {
+                        const findValues = []
+                        value.forEach(item => { 
+                            if (value[splitFields[b]] !== null) findValues.push(item[splitFields[b]])
+                        })
+                        value = []
+                        findValues.forEach(item => {
+                            value.push({ [splitFields[b]]: item})
+                        })
+                    }
+                    else {
+                        value = value[splitFields[b]]
+                    }
+                }
+                data[splitFields[0]] = value
+            }
+            else {
+                data[field] = wilayaData[field]
+            }
+        }
+        return data
+    } else if (Array.isArray(wilayaData)) {
+        const final = []
+        wilayaData.forEach(val => {
+            const data = {}
+            for (let i=0; i < projection.length; i++) {
+                const field = projection[i]
+                
+                if (field.includes('.')) {
+                    const splitFields = field.split('.')
+                    let value = val[splitFields[0]];
+                    for (let b=1; b < splitFields.length; b++) {
+                        if (Array.isArray(value)) {
+                            const findValues = []
+                            value.forEach(item => { 
+                                if (value[splitFields[b]] !== null) findValues.push(item[splitFields[b]])
+                            })
+                            value = []
+                            findValues.forEach(item => {
+                                value.push({ [splitFields[b]]: item})
+                            })
+                        }
+                        else {
+                            value = value[splitFields[b]]
+                        }
+                    }
+                    data[splitFields[0]] = value
+                }
+                else {
+                    data[field] = val[field]
+                }
+            }
+            final.push(data)
+        })
+        return final
+       
+    } 
+}
   if (Array.isArray(wilayaData)) {
     return wilayaData.map(w => _projectWilayaObject(w, projection));
   }
