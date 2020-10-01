@@ -5,7 +5,14 @@ const ZIP_COUNT = 48073;
  * @param {Number} code zip code
  * @returns {Boolean}
  */
-const isValidZipCode = (code) =>
-  Number.isInteger(code) && code >= 1000 && code <= ZIP_COUNT;
+const isValidZipCode = (code) => {
+  const parsedCode = parseInt(code, 10);
+  return (
+    !Number.isNaN(parsedCode) &&
+    Number.isInteger(parsedCode) &&
+    parsedCode >= 1000 &&
+    parsedCode <= ZIP_COUNT
+  );
+};
 
 module.exports = isValidZipCode;
