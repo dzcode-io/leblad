@@ -132,7 +132,7 @@ Takes a phone code and returns the matching wilaya.
 
 **Arguments**
 
-- `phoneCode: number|string` (**required**) the Wilaya's "phoneCode" or the full phone number
+- `phoneCode: number` (**required**) the Wilaya's "phoneCode"
 - `projection: string[]` (optional) Array of Wilaya Object attributes to keep
 
 **Examples**
@@ -141,8 +141,6 @@ Takes a phone code and returns the matching wilaya.
 const { getWilayaByPhoneCode } = require('@dzcode-io/leblad');
 
 console.log(getWilayaByPhoneCode(34)); //will the wilaya object ({name: "Béjaïa"...})
-
-console.log(getWilayaByPhoneCode("0342345678")); //will return the same object ({name: "Béjaïa"...})
 ```
 
 ## Helper methods
