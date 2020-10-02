@@ -1,5 +1,6 @@
 // internal functions
 const isValidWilayaCode = require('./utils/isValidWilayaCode');
+const isValidZipCode = require('./utils/isValidZipCode');
 const wilayaProjection = require('./utils/projections/wilayaProjection');
 // APIs
 const getWilayaList = require('./api/getWilayaList');
@@ -23,5 +24,6 @@ module.exports = {
   utils: {
     wilayaProjection,
     isValidWilayaCode,
+    isValidZipCode,
   },
 };

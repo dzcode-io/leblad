@@ -1,8 +1,11 @@
 # Le'Blad
+
 [<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![codecov](https://codecov.io/gh/dzcode-io/leblad/branches/branch/develop/graph/badge.svg)](https://codecov.io/gh/dzcode-io/leblad/branches) [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fdzcode-io%2Fleblad%2Fdevelop)](https://dashboard.stryker-mutator.io/reports/github.com/dzcode-io/leblad/develop) [![Known Vulnerabilities](https://snyk.io/test/github/dzcode-io/leblad/badge.svg)](https://snyk.io/test/github/dzcode-io/leblad)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A library providing a list of Algerian administrative areas with many useful APIs.
@@ -66,7 +69,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 
 **Arguments**
 
-- `wilayaCode: number` (**required**) the Wilaya's "matricule"  
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
 - `projection: string[]` (optional) Array of Wilaya Object attributes
 
 **Examples**
@@ -142,6 +145,7 @@ const { getWilayaByPhoneCode } = require('@dzcode-io/leblad');
 
 console.log(getWilayaByPhoneCode(34)); //will the wilaya object ({name: "Béjaïa"...})
 ```
+
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
@@ -150,7 +154,7 @@ Return an object or an array of object with only wilaya attribute you select in 
 
 **Arguments**
 
-- `wilaya: (object|array)` (**required**) A wilaya object or an array of wilaya objects  
+- `wilaya: (object|array)` (**required**) A wilaya object or an array of wilaya objects
 - `projection: string[]` (optional) Array of Wilaya Object attributes
 
 **Examples**
@@ -170,6 +174,14 @@ Check if a given wilaya code (matricule) is valid (i.e is an integer between 1 a
 **Arguments**
 
 - `code: number` (**required**) Wilaya code
+
+#### isValidZipCode(code:(number|string))
+
+Check if a given zip code is valid (i.e is an integer between 1000 and 48073).
+
+**Arguments**
+
+- `code: (number|string)` (**required**) zip code
 
 ## Local development
 
@@ -231,6 +243,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
