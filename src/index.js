@@ -9,6 +9,7 @@ const getWilayaByZipCode = require('./api/getWilayaByZipCode');
 const getZipCodesForWilaya = require('./api/getZipCodesForWilaya');
 const getDairatsForWilaya = require('./api/getDairatsForWilaya');
 const getWilayaByPhoneCode = require("./api/getWilayaByPhoneCode");
+
 const data = require('../data/WilayaList.json');
 
 const _getData = () => [...data];

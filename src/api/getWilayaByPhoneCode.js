@@ -14,10 +14,11 @@ const getWilayaByPhoneCode = data =>
 * @returns { Object | undefined } Returns the target object, or undefined
 */
   (phoneCode, projection) => {
-    if(!Number.isInteger(phoneCode)){
+    if(Number.isNaN(phoneCode)){
       return;
     }
-    const wilaya = data.find(w => w.phoneCodes.includes(phoneCode));
+    const parsedPhoneCode = Number.parseInt(phoneCode, 10);
+    const wilaya = data.find(w => w.phoneCodes.includes(parsedPhoneCode));
     // eslint-disable-next-line consistent-return
     return projectWilaya(wilaya, projection);
   };

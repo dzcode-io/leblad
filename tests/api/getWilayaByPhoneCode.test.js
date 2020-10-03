@@ -47,8 +47,18 @@ describe('get matching wilaya', ()=> {
     });
   });
 
-  it('should return undefined if the given phone code is not a number', () => {
+  it('should return the matching wilayas if the given phone code is a number string', () => {
     const result = getWilayaByPhoneCode(mockData)("34");
+
+    expect(result).toEqual({
+      mattricule: 6,
+      name: "BEJAIA",
+      phoneCodes: [34],
+    });
+  });
+
+  it('should return undefined if the given phone code is NaN', () => {
+    const result = getWilayaByPhoneCode(mockData)(NaN);
 
     expect(result).toBeUndefined();
   });
