@@ -9,7 +9,7 @@ const getWilayaByPhoneCode = data =>
 * //returns {mattricule: '6', name: 'Béjaïa', ...} because the phone code 34 belongs to Béjaïa
 * getWilayaByPhoneCode(34)
 *
-* @param { Number } phoneCode the phone code
+* @param { Number | String } phoneCode the phone code
 * @param {String[]} projection a list of wilaya object attributes to keep
 * @returns { Object | undefined } Returns the target object, or undefined
 */
