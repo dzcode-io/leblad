@@ -3,7 +3,7 @@
 [<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![codecov](https://codecov.io/gh/dzcode-io/leblad/branches/branch/develop/graph/badge.svg)](https://codecov.io/gh/dzcode-io/leblad/branches) [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fdzcode-io%2Fleblad%2Fdevelop)](https://dashboard.stryker-mutator.io/reports/github.com/dzcode-io/leblad/develop) [![Known Vulnerabilities](https://snyk.io/test/github/dzcode-io/leblad/badge.svg)](https://snyk.io/test/github/dzcode-io/leblad)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A library providing a list of Algerian administrative areas with many useful APIs.
@@ -94,7 +94,7 @@ const { getAdjacentWilayas } = require('@dzcode-io/leblad');
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
 
-#### getZipCodesForWilaya(wilayaCode?: number)
+#### getZipCodesForWilaya(wilayaCode: number)
 
 Takes a wilaya code (matricule) and returns a list of Respective Zip-Codes for that wilaya
 
@@ -159,6 +159,38 @@ Takes a daira name and returns the matching wilaya.
 const { getWilayaByDairaName } = require('@dzcode-io/leblad');
 
 console.log(getWilayaByDairaName("OUED RHIOU")); // will print the wilaya object ({name: "Relizane"...})
+```
+
+#### getPhoneCodesForWilaya(wilayaCode: number)
+
+Takes a wilaya code (matricule) and returns a list of phone codes for given wilaya
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getPhoneCodesForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getPhoneCodesForWilaya(31)); //returns list of phone codes for wilaya 31
+```
+
+#### getPhoneCodeForWilaya(wilayaCode: number)
+
+Takes a wilaya code (matricule) and returns the first phone code from a list of phone codes for given wilaya
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getPhoneCodeForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getPhoneCodeForWilaya(16)); //returns first phone code for wilaya 16
 ```
 
 ## Helper methods
@@ -254,6 +286,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/anuragsati"><img src="https://avatars2.githubusercontent.com/u/52669445?v=4" width="100px;" alt=""/><br /><sub><b>Anurag sati</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=anuragsati" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AmineVolk"><img src="https://avatars1.githubusercontent.com/u/37228315?v=4" width="100px;" alt=""/><br /><sub><b>HamdiAmine</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AmineVolk" title="Code">💻</a></td>
     <td align="center"><a href="http://www.keefer.tech"><img src="https://avatars1.githubusercontent.com/u/16760467?v=4" width="100px;" alt=""/><br /><sub><b>xxKeefer</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=xxKeefer" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
   </tr>
 </table>
 
