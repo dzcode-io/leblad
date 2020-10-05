@@ -75,7 +75,7 @@ Takes a wilaya code (matricule) and returns the matching wilaya
 ```javascript
 const { getWilayaByCode } = require('@dzcode-io/leblad');
 
-console.log(getWilayaByCode(31)); // will the wilaya object ({name: "Oran"...})
+console.log(getWilayaByCode(31)); // will print the wilaya object ({name: "Oran"...})
 ```
 
 ##### getAdjacentWilayas(wilayaCode: number)
@@ -141,7 +141,24 @@ Takes a phone code and returns the matching wilaya.
 ```javascript
 const { getWilayaByPhoneCode } = require('@dzcode-io/leblad');
 
-console.log(getWilayaByPhoneCode(34)); //will the wilaya object ({name: "Béjaïa"...})
+console.log(getWilayaByPhoneCode(34)); //will the print wilaya object ({name: "Béjaïa"...})
+```
+
+#### getWilayaByDairaName(dairaName: String, projection?: string[])
+
+Takes a daira name and returns the matching wilaya.
+
+**Arguments**
+
+- `dairaName: string` (**required**) the Wilaya's "dairaName" in en|fr|ar
+- `projection: string[]` (optional) Array of Wilaya Object attributes to keep
+
+**Examples**
+
+```javascript
+const { getWilayaByDairaName } = require('@dzcode-io/leblad');
+
+console.log(getWilayaByDairaName("OUED RHIOU")); // will print the wilaya object ({name: "Relizane"...})
 ```
 
 #### getPhoneCodesForWilaya(wilayaCode: number)
