@@ -94,7 +94,7 @@ const { getAdjacentWilayas } = require('@dzcode-io/leblad');
 console.log(getAdjacentWilayas(31)); // will print [46, 22, 29, 27]
 ```
 
-#### getZipCodesForWilaya(wilayaCode?: number)
+#### getZipCodesForWilaya(wilayaCode: number)
 
 Takes a wilaya code (matricule) and returns a list of Respective Zip-Codes for that wilaya
 
@@ -144,7 +144,7 @@ const { getWilayaByPhoneCode } = require('@dzcode-io/leblad');
 console.log(getWilayaByPhoneCode(34)); //will the wilaya object ({name: "Béjaïa"...})
 ```
 
-#### getPhoneCodesForWilaya(wilayaCode?: number)
+#### getPhoneCodesForWilaya(wilayaCode: number)
 
 Takes a wilaya code (matricule) and returns a list of phone codes for given wilaya
 
