@@ -160,6 +160,22 @@ const { getPhoneCodesForWilaya } = require('@dzcode-io/leblad');
 console.log(getPhoneCodesForWilaya(31)); //returns list of phone codes for wilaya 31
 ```
 
+#### getPhoneCodeForWilaya(wilayaCode: number)
+
+Takes a wilaya code (matricule) and returns the first phone code from a list of phone codes for given wilaya
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getPhoneCodeForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getPhoneCodeForWilaya(16)); //returns first phone code for wilaya 16
+```
+
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
