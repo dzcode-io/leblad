@@ -144,6 +144,22 @@ const { getWilayaByPhoneCode } = require('@dzcode-io/leblad');
 console.log(getWilayaByPhoneCode(34)); //will the wilaya object ({name: "Béjaïa"...})
 ```
 
+#### getPhoneCodesForWilaya(wilayaCode?: number)
+
+Takes a wilaya code (matricule) and returns a list of phone codes for given wilaya
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+
+**Examples**
+
+```javascript
+const { getPhoneCodesForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getPhoneCodesForWilaya(31)); //returns list of phone codes for wilaya 31
+```
+
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
