@@ -9,6 +9,7 @@ const getWilayaByCode = require('./api/getWilayaByCode');
 const getWilayaByZipCode = require('./api/getWilayaByZipCode');
 const getZipCodesForWilaya = require('./api/getZipCodesForWilaya');
 const getDairatsForWilaya = require('./api/getDairatsForWilaya');
+const getPhoneCodesForWilaya = require('./api/getPhoneCodesForWilaya');
 
 const data = require('../data/WilayaList.json');
 
@@ -21,6 +22,7 @@ module.exports = {
   getWilayaByZipCode: getWilayaByZipCode(_getData()),
   getZipCodesForWilaya: getZipCodesForWilaya(_getData()),
   getDairatsForWilaya: getDairatsForWilaya(_getData()),
+  getPhoneCodesForWilaya: getPhoneCodesForWilaya(_getData()),
   utils: {
     wilayaProjection,
     isValidWilayaCode,
