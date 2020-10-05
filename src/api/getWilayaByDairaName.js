@@ -1,5 +1,7 @@
 const projectWilaya = require('../utils/projections/wilayaProjection');
 
+const MIN_DAIRA_LENGTH = 2;
+
 const getWilayaByDairaName = data =>
 /**
  * Takes a wilaya daira-name and returns its respective wilaya
@@ -13,13 +15,21 @@ const getWilayaByDairaName = data =>
  * @returns { Object | undefined } Returns matching wilaya, or undefined
  */
   (daira, projection) =>  {
+    if (!daira || daira.trim().length <= MIN_DAIRA_LENGTH) {
+      return;
+    }
+
+    const dairaName = daira.toLowerCase();
+
     const wilaya = data.find(w =>
       w.dairats.find(d =>
-        d.name === daira
-        || d.name_ar === daira
-        || d.name_en === daira
+        d.name.toLowerCase() === dairaName
+      || d.name_ar.toLowerCase() === dairaName
+      || d.name_en.toLowerCase() === dairaName
       )
     );
+
+    // eslint-disable-next-line consistent-return
     return projectWilaya(wilaya, projection);
   };
 

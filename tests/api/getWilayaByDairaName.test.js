@@ -26,7 +26,19 @@ describe('get matching wilaya', ()=> {
   });
 
   it('should return undefined if the wilaya with the given daira is not found', () => {
-    const result = getWilayaByDairaName(mockData)("wagadougou");
+    const result = getWilayaByDairaName(mockData)("foo");
+
+    expect(result).toBeUndefined();
+  });
+
+  it('should return undefined if there\'s no daira', () => {
+    const result = getWilayaByDairaName(mockData)();
+
+    expect(result).toBeUndefined();
+  });
+
+  it('should return undefined if the wilaya with the given daira is empty', () => {
+    const result = getWilayaByDairaName(mockData)("");
 
     expect(result).toBeUndefined();
   });
