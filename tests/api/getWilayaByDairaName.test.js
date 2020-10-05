@@ -1,11 +1,12 @@
 const OUED_RHIOU = "OUED RHIOU";
+const OUED_RHIOU_EN = `${OUED_RHIOU  }_en`;
 describe('get matching wilaya', ()=> {
   const mockData = [{
     mattricule: 48,
     name: "Relizane",
     dairats: [
       {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-      {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU}
+      {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
     ]
   }];
 
@@ -51,20 +52,20 @@ describe('get matching wilaya', ()=> {
       name: "Relizane",
       dairats: [
         {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU}
+        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
       ]
     });
   });
 
   it('should return matching wilaya object with english name', () => {
-    const result = getWilayaByDairaName(mockData)("OUED RHIOU");
+    const result = getWilayaByDairaName(mockData)(OUED_RHIOU_EN);
 
     expect(result).toEqual({
       mattricule: 48,
       name: "Relizane",
       dairats: [
         {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU}
+        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
       ]
     });
   });
@@ -77,7 +78,7 @@ describe('get matching wilaya', ()=> {
       name: "Relizane",
       dairats: [
         {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU}
+        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
       ]
     });
   });
