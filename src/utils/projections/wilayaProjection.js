@@ -1,6 +1,6 @@
 const _projectWilayaObject = (wilayaObject, attributes) => {
   return attributes.reduce((acc, attr)=> {
-    return {...acc, [attr]: wilayaObject[attr]};
+    return { ...acc, [attr]: wilayaObject[attr] };
   }, {});
 };
 

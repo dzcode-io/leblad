@@ -1,6 +1,6 @@
 describe('Wilaya list projection', ()=> {
-  const mockDataArray = [{food: 'mhajeb', drink: 'lben', isBnin: true}, {food: 'zviti', drink: 'rayeb', isBnin: true}];
-  const mockDataObject = {food: 'karentika', drink: 'RedBull', isBnin: true};
+  const mockDataArray = [{ food: 'mhajeb', drink: 'lben', isBnin: true }, { food: 'zviti', drink: 'rayeb', isBnin: true }];
+  const mockDataObject = { food: 'karentika', drink: 'RedBull', isBnin: true };
 
   let projectWilaya;
 
@@ -27,13 +27,13 @@ describe('Wilaya list projection', ()=> {
 
     it('should return the data array with only the desired attributes', ()=> {
       expect(projectWilaya(mockDataArray, projection)).toEqual([
-        {food: 'mhajeb', isBnin: true},
-        {food: 'zviti',  isBnin: true}
+        { food: 'mhajeb', isBnin: true },
+        { food: 'zviti',  isBnin: true }
       ]);
     });
 
     it('should return the data object with only the desired attributes', ()=> {
-      expect(projectWilaya(mockDataObject, projection)).toEqual({food: 'karentika', isBnin: true});
+      expect(projectWilaya(mockDataObject, projection)).toEqual({ food: 'karentika', isBnin: true });
     });
 
     it('should return the same data if the projections array is empty', () => {
