@@ -9,15 +9,19 @@ const getWilayaByPhoneCode = data =>
 * //returns {mattricule: '6', name: 'Béjaïa', ...} because the phone code 34 belongs to Béjaïa
 * getWilayaByPhoneCode(34)
 *
-* @param { Number | String } phoneCode is a number if the latter corresponds to the wilaya's phone code and a string if's the full phone number
+* @param { Number | String } phoneCode the phone code
 * @param {String[]} projection a list of wilaya object attributes to keep
 * @returns { Object | null } Returns the target object, or null
 */
   (phoneCode, projection) => {
-    const phoneCodeVar =  typeof phoneCode === "number"
-      ? phoneCode
-      : parseInt(phoneCode.substring(1, 3), 10);
-    const wilaya = data.find(w => w.phoneCodes.includes(phoneCodeVar));
+    const parsedPhoneCode = Number(phoneCode);
+
+    if(Number.isNaN(parsedPhoneCode)){
+      return null;
+    }
+
+    const wilaya = data.find(w => w.phoneCodes.includes(parsedPhoneCode));
     return projectWilaya(wilaya, projection);
   };
+
 module.exports = getWilayaByPhoneCode;
