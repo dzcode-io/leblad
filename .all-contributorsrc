@@ -6,6 +6,17 @@
   "commit": false,
   "contributors": [
     {
+      "login": "Fcmam5",
+      "name": "Fortas Abdeldjalil",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9090674?v=4",
+      "profile": "https://fcmam5.me/",
+      "contributions": [
+        "maintenance",
+        "code",
+        "review"
+      ]
+    },
+    {
       "login": "ZibanPirate",
       "name": "Zakaria Mansouri",
       "avatar_url": "https://avatars2.githubusercontent.com/u/20110076?v=4",

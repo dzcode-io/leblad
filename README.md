@@ -280,16 +280,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://fcmam5.me/"><img src="https://avatars3.githubusercontent.com/u/9090674?v=4" width="100px;" alt=""/><br /><sub><b>Fortas Abdeldjalil</b></sub></a><br /><a href="#maintenance-Fcmam5" title="Maintenance">🚧</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Fcmam5" title="Code">💻</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AFcmam5" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="http://zakiii.com"><img src="https://avatars2.githubusercontent.com/u/20110076?v=4" width="100px;" alt=""/><br /><sub><b>Zakaria Mansouri</b></sub></a><br /><a href="#tool-ZibanPirate" title="Tools">🔧</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AZibanPirate" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="http://oussamabouchikhi.github.io"><img src="https://avatars0.githubusercontent.com/u/45850487?v=4" width="100px;" alt=""/><br /><sub><b>Oussama Bouchikhi</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=oussamabouchikhi" title="Code">💻</a></td>
     <td align="center"><a href="http://abachi.github.io"><img src="https://avatars3.githubusercontent.com/u/12300606?v=4" width="100px;" alt=""/><br /><sub><b>Nasser Abachi</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=abachi" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/anuragsati"><img src="https://avatars2.githubusercontent.com/u/52669445?v=4" width="100px;" alt=""/><br /><sub><b>Anurag sati</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=anuragsati" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AmineVolk"><img src="https://avatars1.githubusercontent.com/u/37228315?v=4" width="100px;" alt=""/><br /><sub><b>HamdiAmine</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AmineVolk" title="Code">💻</a></td>
     <td align="center"><a href="http://www.keefer.tech"><img src="https://avatars1.githubusercontent.com/u/16760467?v=4" width="100px;" alt=""/><br /><sub><b>xxKeefer</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=xxKeefer" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://fcmam5.me/"><img src="https://avatars3.githubusercontent.com/u/9090674?v=4" width="100px;" alt=""/><br /><sub><b>Fortas Abdeldjalil</b></sub></a><br /><a href="#maintenance-Fcmam5" title="Maintenance">🚧</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Fcmam5" title="Code">💻</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AFcmam5" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
+
   </tr>
 </table>
 
