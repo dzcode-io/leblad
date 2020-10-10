@@ -37,28 +37,28 @@ describe('get matching wilaya', ()=> {
     expect(result).toBeUndefined();
   });
 
-  it('should return matching wilaya array when giving phone code', () => {
+  it('should return the matching wilayas if the given phone code number is valid', () => {
     const result = getWilayaByPhoneCode(mockData)(34);
 
-    expect(result).toEqual( {
+    expect(result).toEqual({
       mattricule: 6,
       name: "BEJAIA",
       phoneCodes: [34],
     });
   });
 
-  it('should return an array of matching wilayas for a given phone number', () => {
-    const result = getWilayaByPhoneCode(mockData)('0342345678');
+  it('should return the matching wilayas if the given phone code is a number string', () => {
+    const result = getWilayaByPhoneCode(mockData)("34");
 
-    expect(result).toEqual( {
+    expect(result).toEqual({
       mattricule: 6,
       name: "BEJAIA",
       phoneCodes: [34],
     });
   });
 
-  it('should return undefined if the given number is invalid', () => {
-    const result = getWilayaByPhoneCode(mockData)('03d2345678');
+  it('should return undefined if the given phone code is NaN', () => {
+    const result = getWilayaByPhoneCode(mockData)(NaN);
 
     expect(result).toBeUndefined();
   });

@@ -4,7 +4,7 @@ describe("Le'Bled SDK", () => {
 
   beforeEach(() => {
     data = require('../data/WilayaList.json');
-    lbledSdk = require('../src/index');
+    lbledSdk = require('../src');
   });
 
   it('data should be present', () => {
@@ -19,8 +19,10 @@ describe("Le'Bled SDK", () => {
       getZipCodesForWilaya: expect.any(Function),
       getWilayaByZipCode: expect.any(Function),
       getDairatsForWilaya: expect.any(Function),
+      getWilayaByPhoneCode: expect.any(Function),
       getPhoneCodesForWilaya: expect.any(Function),
       getPhoneCodeForWilaya: expect.any(Function),
+      getBaladyiatsForWilaya: expect.any(Function),
       utils: {
         wilayaProjection: expect.any(Function),
         isValidZipCode: expect.any(Function),
