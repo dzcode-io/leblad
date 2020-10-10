@@ -28,10 +28,10 @@ describe('get matching wilaya', ()=> {
     expect(typeof fn).toBe('function');
   });
 
-  it('should return undefined if the wilaya with the given mattricule is not found', () => {
+  it('should return null if the wilaya with the given mattricule is not found', () => {
     const result = getWilayaByCode(mockData)(31);
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 
   it('should return matching wilaya array', () => {

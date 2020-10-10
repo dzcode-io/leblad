@@ -12,11 +12,11 @@ const getWilayaByDairaName = data =>
  *
  * @param { String } daira The Wilaya's daira name(en | ar | fr)
  * @param {String[]} projection a list of  wilaya object attributes to keep
- * @returns { Object | undefined } Returns matching wilaya, or undefined
+ * @returns { Object | null } Returns matching wilaya, or null
  */
   (daira, projection) =>  {
     if (!daira || daira.trim().length < MIN_DAIRA_LENGTH) {
-      return;
+      return null;
     }
 
     const dairaName = daira.toLowerCase();
@@ -29,7 +29,6 @@ const getWilayaByDairaName = data =>
       )
     );
 
-    // eslint-disable-next-line consistent-return
     return projectWilaya(wilaya, projection);
   };
 

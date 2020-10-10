@@ -14,7 +14,7 @@ const _projectWilayaObject = (wilayaObject, attributes) => {
  */
 const projectWilaya = (wilayaData, projection) => {
   if (!wilayaData || !projection) {
-    return wilayaData;
+    return wilayaData || null;
   }
 
   if (Array.isArray(wilayaData)) {

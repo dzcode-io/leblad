@@ -10,12 +10,12 @@ const getPhoneCodeForWilaya = data =>
    * getPhoneCodeForWilaya(16)
    *
    * @param { Number } wilayaCode wilaya code (mattricule)
-   * @returns { Number | Undefined } Returns the first phone code for wilaya, or undefined
+   * @returns { Number | null } Returns the first phone code for wilaya, or null
    */
 
   (wilayaCode) => {
     const phoneCodes = getPhoneCodesForWilaya(data)(wilayaCode) || [];
-    return phoneCodes[0];
+    return phoneCodes[0] || null;
   };
 
 module.exports = getPhoneCodeForWilaya;

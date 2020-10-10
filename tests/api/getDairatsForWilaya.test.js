@@ -112,8 +112,8 @@ describe('Get dairats for a wilaya', ()=>{
     expect(typeof getDairatsForWilaya(mockData)).toBe('function');
   });
 
-  it('should return undefined if the wilaya with the given code is not found', () => {
-    expect(getDairatsForWilaya(mockData)(289)).toBeUndefined();
+  it('should return null if the wilaya with the given code is not found', () => {
+    expect(getDairatsForWilaya(mockData)(289)).toBeNull();
   });
 
   it('should return dairats for given wilaya', ()=>{

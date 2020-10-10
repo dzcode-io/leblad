@@ -31,10 +31,10 @@ describe('get phone codes for a wilaya', ()=> {
     expect(typeof fn).toBe('function');
   });
 
-  it('should return undefined if the phone codes for the given wilaya code could not be found', () => {
+  it('should return null if the phone codes for the given wilaya code could not be found', () => {
     const result = getPhoneCodesForWilaya(mockData)(9);
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 
   it('should return matching phone codes array when given a wilaya code', () => {

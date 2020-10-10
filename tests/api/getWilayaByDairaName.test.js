@@ -26,22 +26,22 @@ describe('get matching wilaya', ()=> {
     expect(typeof fn).toBe('function');
   });
 
-  it('should return undefined if the wilaya with the given daira is not found', () => {
+  it('should return null if the wilaya with the given daira is not found', () => {
     const result = getWilayaByDairaName(mockData)("foo");
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 
-  it('should return undefined if there\'s no daira', () => {
+  it('should return null if there\'s no daira', () => {
     const result = getWilayaByDairaName(mockData)();
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 
-  it('should return undefined if the wilaya with the given daira is empty', () => {
+  it('should return null if the wilaya with the given daira is empty', () => {
     const result = getWilayaByDairaName(mockData)("");
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 
   it('should return matching wilaya object with arabic name', () => {

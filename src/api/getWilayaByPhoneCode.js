@@ -11,7 +11,7 @@ const getWilayaByPhoneCode = data =>
 *
 * @param { Number | String } phoneCode is a number if the latter corresponds to the wilaya's phone code and a string if's the full phone number
 * @param {String[]} projection a list of wilaya object attributes to keep
-* @returns { Object | undefined } Returns the target object, or undefined
+* @returns { Object | null } Returns the target object, or null
 */
   (phoneCode, projection) => {
     const phoneCodeVar =  typeof phoneCode === "number"
