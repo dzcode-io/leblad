@@ -15,6 +15,9 @@ const getWilayaByPhoneCode = data =>
 */
   (phoneCode, projection) => {
     const parsedPhoneCode = Number.parseInt(phoneCode, 10);
+    if(Number.isNaN(parsedPhoneCode)){
+      return;
+    }
     const wilaya = data.find(w => w.phoneCodes.includes(parsedPhoneCode));
     // eslint-disable-next-line consistent-return
     return projectWilaya(wilaya, projection);
