@@ -10,7 +10,7 @@ describe('get the full Wilaya list', () => {
   });
 
   it('should return return a curried function that returns the data', () => {
-    const data = [{foo: 'bar'}];
+    const data = [{ foo: 'bar' }];
 
     const fn = getWilayaList(data);
 

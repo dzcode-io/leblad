@@ -1,6 +1,6 @@
 const _projectWilayaObject = (wilayaObject, attributes) => {
   return attributes.reduce((acc, attr)=> {
-    return {...acc, [attr]: wilayaObject[attr]};
+    return { ...acc, [attr]: wilayaObject[attr] };
   }, {});
 };
 
@@ -13,7 +13,7 @@ const _projectWilayaObject = (wilayaObject, attributes) => {
  * @returns {Object | Array | null } returns an object (or array of objects) with only the selected properties in "projection" array
  */
 const projectWilaya = (wilayaData, projection) => {
-  if (!wilayaData || !projection) {
+  if (!wilayaData || !projection || !projection.length) {
     return wilayaData || null;
   }
 

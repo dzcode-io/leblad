@@ -30,7 +30,8 @@
     "no-trailing-spaces": "error",
     "comma-spacing": "error",
     "quote-props": "error",
-    "key-spacing": "error"
+    "key-spacing": "error",
+    "object-curly-spacing": "error"
   },
   "overrides": [
     {
