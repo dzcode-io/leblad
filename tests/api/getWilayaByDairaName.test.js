@@ -5,8 +5,8 @@ describe('get matching wilaya', ()=> {
     mattricule: 48,
     name: "Relizane",
     dairats: [
-      {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-      {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
+      { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
+      { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
     ]
   }];
 
@@ -51,8 +51,8 @@ describe('get matching wilaya', ()=> {
       mattricule: 48,
       name: "Relizane",
       dairats: [
-        {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
+        { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
+        { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
       ]
     });
   });
@@ -64,8 +64,8 @@ describe('get matching wilaya', ()=> {
       mattricule: 48,
       name: "Relizane",
       dairats: [
-        {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
+        { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
+        { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
       ]
     });
   });
@@ -77,8 +77,8 @@ describe('get matching wilaya', ()=> {
       mattricule: 48,
       name: "Relizane",
       dairats: [
-        {name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE"},
-        {name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN}
+        { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
+        { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
       ]
     });
   });
