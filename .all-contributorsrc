@@ -68,6 +68,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "me",
+      "name": "Ivan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9734?v=4",
+      "profile": "https://github.com/me",
+      "contributions": [
+        "maintenance",
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
