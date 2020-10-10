@@ -8,7 +8,7 @@ describe('Wilaya list projection', ()=> {
     projectWilaya = require('../../../src/utils/projections/wilayaProjection');
   });
 
-  it('return null if the wilaya parameter is undefined', () => {
+  it('should return null if the wilaya parameter is undefined', () => {
     expect(projectWilaya()).toBeNull();
     expect(projectWilaya(undefined, ['food', 'isBnin'])).toBeNull();
   });
