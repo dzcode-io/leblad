@@ -6,6 +6,17 @@
   "commit": false,
   "contributors": [
     {
+      "login": "Fcmam5",
+      "name": "Fortas Abdeldjalil",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9090674?v=4",
+      "profile": "https://fcmam5.me/",
+      "contributions": [
+        "maintenance",
+        "code",
+        "review"
+      ]
+    },
+    {
       "login": "ZibanPirate",
       "name": "Zakaria Mansouri",
       "avatar_url": "https://avatars2.githubusercontent.com/u/20110076?v=4",
@@ -47,6 +58,24 @@
       "name": "HamdiAmine",
       "avatar_url": "https://avatars1.githubusercontent.com/u/37228315?v=4",
       "profile": "https://github.com/AmineVolk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "xxKeefer",
+      "name": "xxKeefer",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16760467?v=4",
+      "profile": "http://www.keefer.tech",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "joeylnguyen",
+      "name": "Joey Nguyen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59431792?v=4",
+      "profile": "https://github.com/joeylnguyen",
       "contributions": [
         "code"
       ]

@@ -2,7 +2,7 @@ describe("Le'Bled SDK", () => {
   let data;
   let lbledSdk;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     data = require('../data/WilayaList.json');
     lbledSdk = require('../src/index');
   });
@@ -20,10 +20,13 @@ describe("Le'Bled SDK", () => {
       getWilayaByZipCode: expect.any(Function),
       getDairatsForWilaya: expect.any(Function),
       getWilayaByPhoneCode: expect.any(Function),
+      getPhoneCodesForWilaya: expect.any(Function),
+      getPhoneCodeForWilaya: expect.any(Function),
       utils: {
         wilayaProjection: expect.any(Function),
-        isValidWilayaCode: expect.any(Function)
-      }
+        isValidZipCode: expect.any(Function),
+        isValidWilayaCode: expect.any(Function),
+      },
     });
   });
 });
