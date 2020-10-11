@@ -7,9 +7,10 @@ const getBaladyiatsForWilaya = data =>
    * @example Get Baladiyats list of Alger (code: 16)
    *
    *
-   * get(16)
+   * getBaladyiatsForWilaya (16)
    *
    * @param { Number } mattricule wilaya code (mattricule)
+   * @param {String[]} projection a list of Baladyia object attributes to keep
    * @returns { Object[] }
    */
 
