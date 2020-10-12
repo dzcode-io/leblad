@@ -69,11 +69,19 @@ describe('Get baladiyats for wilaya', () => {
     getBaladyiatsForWilaya = require('../../src/api/getBaladyiatsForWilaya');
   });
 
+  it('should export a function', () => {
+    expect(typeof getBaladyiatsForWilaya).toBe('function');
+  });
+
   it('should return a curried function that returns data', () => {
     expect(typeof getBaladyiatsForWilaya(mockData)).toBe('function');
   });
 
   it('should return Baladiyia List', () => {
     expect(getBaladyiatsForWilaya(mockData)(33)).toEqual(baladyiaFiWilaya33);
+  });
+
+  it('should return undefined if the wilaya with the given code is not found', () => {
+    expect(getBaladyiatsForWilaya(mockData)(333)).toBeUndefined();
   });
 });

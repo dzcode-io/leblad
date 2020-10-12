@@ -196,6 +196,24 @@ const { getPhoneCodeForWilaya } = require('@dzcode-io/leblad');
 console.log(getPhoneCodeForWilaya(16)); //returns first phone code for wilaya 16
 ```
 
+#### getBaladyiatsForWilaya(wilayaCode: number, projection?: string[])
+
+Takes a wilaya code (mattricule) and returns array of Baladiyates of wilaya.
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `projection: string[]` (optional) Array of Baladyia Object attributes
+
+**Examples**
+
+```javascript
+const { getBaladyiatsForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getBaladyiatsForWilaya(31)); // will print the baladyiats list ([{ code: 3125, name: 'AIN KERMA'..},{ code: 3105,name: 'ES SENIA',}])
+```
+
+
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])

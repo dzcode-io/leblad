@@ -10,13 +10,17 @@ const getBaladyiatsForWilaya = data =>
    * getBaladyiatsForWilaya (16)
    *
    * @param { Number } mattricule wilaya code (mattricule)
-   * @param {String[]} projection a list of Baladyia object attributes to keep
+   * @param { String[] } projection a list of Baladyia object attributes to keep
    * @returns { Object[] }
    */
 
   (mattricule, projections) => {
-    const baladyiats = [].concat(...data.find((wilaya) => wilaya.mattricule === mattricule).dairats.map((daira) => daira.baladyiats));
-    return projectWilaya(baladyiats, projections);
+    const wilaya = data.find(w => w.mattricule === mattricule);
+    if (wilaya) {
+      const baladyiats = wilaya.dairats.reduce((acc, daira) => [...acc, ...daira.baladyiats], []);
+      return projectWilaya(baladyiats, projections);
+    }
+    return undefined;
   };
 
 
