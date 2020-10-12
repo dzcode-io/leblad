@@ -31,10 +31,10 @@ describe('get matching wilaya', ()=> {
     expect(typeof fn).toBe('function');
   });
 
-  it('should return undefined if the wilaya with the given phoneCode is not found', () => {
+  it('should return null if the wilaya with the given phoneCode is not found', () => {
     const result = getWilayaByPhoneCode(mockData)(9);
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 
   it('should return the matching wilayas if the given phone code number is valid', () => {
@@ -57,9 +57,9 @@ describe('get matching wilaya', ()=> {
     });
   });
 
-  it('should return undefined if the given phone code is NaN', () => {
-    const result = getWilayaByPhoneCode(mockData)(NaN);
+  it('should return null if the given number is invalid', () => {
+    const result = getWilayaByPhoneCode(mockData)('03d');
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 });

@@ -8,12 +8,12 @@ const getAdjacentWilayas = data =>
  * getAdjacentWilayas(31)
  *
  * @param { Number} wilayaCode The Wilaya's "matricule"
- * @returns { Number[] | undefined } Returns adjacent wilayas codes, or undefined
+ * @returns { Number[] | null } Returns adjacent wilayas codes, or null
  */
   (wilayaCode) =>  {
     const { adjacentWilayas } = data.find(w => w.mattricule === wilayaCode) || {};
 
-    return adjacentWilayas;
+    return adjacentWilayas || null;
 
   };
 

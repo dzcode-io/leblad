@@ -8,9 +8,9 @@ describe('Wilaya list projection', ()=> {
     projectWilaya = require('../../../src/utils/projections/wilayaProjection');
   });
 
-  it('if the wilaya parameter is undefined', () => {
-    expect(projectWilaya()).toBeUndefined();
-    expect(projectWilaya(undefined, ['food', 'isBnin'])).toBeUndefined();
+  it('should return null if the wilaya parameter is undefined', () => {
+    expect(projectWilaya()).toBeNull();
+    expect(projectWilaya(undefined, ['food', 'isBnin'])).toBeNull();
   });
 
   describe('if no projection parameter is passed', ()=> {

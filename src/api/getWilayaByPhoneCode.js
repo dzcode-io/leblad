@@ -11,15 +11,16 @@ const getWilayaByPhoneCode = data =>
 *
 * @param { Number | String } phoneCode the phone code
 * @param {String[]} projection a list of wilaya object attributes to keep
-* @returns { Object | undefined } Returns the target object, or undefined
+* @returns { Object | null } Returns the target object, or null
 */
   (phoneCode, projection) => {
-    const parsedPhoneCode = Number.parseInt(phoneCode, 10);
+    const parsedPhoneCode = Number(phoneCode);
+
     if(Number.isNaN(parsedPhoneCode)){
-      return;
+      return null;
     }
+
     const wilaya = data.find(w => w.phoneCodes.includes(parsedPhoneCode));
-    // eslint-disable-next-line consistent-return
     return projectWilaya(wilaya, projection);
   };
 

@@ -44,9 +44,9 @@ describe('get wilaya by zip code', () => {
     expect(result.mattricule).toEqual(2);
   });
 
-  it('should return undefined if the zip code doesn\'t exists', () => {
+  it('should return null if the zip code doesn\'t exists', () => {
     const result = getWilayaByZipCode(mockData)(99999);
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 });
