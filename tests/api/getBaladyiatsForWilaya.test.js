@@ -82,6 +82,6 @@ describe('Get baladiyats for wilaya', () => {
   });
 
   it('should return undefined if the wilaya with the given code is not found', () => {
-    expect(getBaladyiatsForWilaya(mockData)(333)).toBeUndefined();
+    expect(getBaladyiatsForWilaya(mockData)(333)).toBeNull();
   });
 });

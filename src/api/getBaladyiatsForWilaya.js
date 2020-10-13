@@ -11,7 +11,7 @@ const getBaladyiatsForWilaya = data =>
    *
    * @param { Number } mattricule wilaya code (mattricule)
    * @param { String[] } projection a list of Baladyia object attributes to keep
-   * @returns { Object[] }
+   * @returns { Object[] | null }
    */
 
   (mattricule, projections) => {
@@ -20,7 +20,7 @@ const getBaladyiatsForWilaya = data =>
       const baladyiats = wilaya.dairats.reduce((acc, daira) => [...acc, ...daira.baladyiats], []);
       return projectWilaya(baladyiats, projections);
     }
-    return undefined;
+    return null;
   };
 
 
