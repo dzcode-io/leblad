@@ -311,7 +311,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
-    <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Redaloukil" title="Code">💻</a></td>
   </tr>
 </table>
 
