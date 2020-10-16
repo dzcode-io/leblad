@@ -163,6 +163,22 @@ const { getWilayaByDairaName } = require('@dzcode-io/leblad');
 console.log(getWilayaByDairaName("OUED RHIOU")); // will print the wilaya object ({name: "Relizane"...})
 ```
 
+#### getBaladyiatsForDaira(dairaName: String)
+
+Takes a daira name and returns the matching baladyiats.
+
+**Arguments**
+
+- `daira: string` (**required**) the Wilaya's "dairaName" in en|fr|ar
+
+**Examples**
+
+```javascript
+const { getBaladyiatsForDaira } = require('@dzcode-io/leblad');
+
+console.log(getBaladyiatsForDaira("ORAN")); // will return baladyiats for daira of "Oran"
+```
+
 
 #### getPhoneCodesForWilaya(wilayaCode: number)
 
