@@ -212,6 +212,24 @@ const { getPhoneCodeForWilaya } = require('@dzcode-io/leblad');
 console.log(getPhoneCodeForWilaya(16)); //returns first phone code for wilaya 16
 ```
 
+#### getBaladyiatsForWilaya(wilayaCode: number, projection?: string[])
+
+Takes a wilaya code (mattricule) and returns array of Baladiyates of wilaya.
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Wilaya's "matricule"
+- `projection: string[]` (optional) Array of Baladyia Object attributes
+
+**Examples**
+
+```javascript
+const { getBaladyiatsForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getBaladyiatsForWilaya(31)); // will print the baladyiats list ([{ code: 3125, name: 'AIN KERMA'..},{ code: 3105,name: 'ES SENIA',}])
+```
+
+
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])
@@ -309,7 +327,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
-    <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Redaloukil" title="Code">💻</a></td>
   </tr>
 </table>
 
