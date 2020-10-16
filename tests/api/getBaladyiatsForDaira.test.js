@@ -25,6 +25,19 @@ describe('Get baladyiats for a daira', ()=>{
       ]
     }
   ];
+  const DAIRA_WITHOUT_BALADIATS = [
+    {
+      code: 3101,
+      name: "ORAN",
+      dairats: [
+        {
+          code: 3101,
+          name: "ORAN",
+          baladyiats: undefined
+        }
+      ]
+    }
+  ];
 
 
 
@@ -47,8 +60,12 @@ describe('Get baladyiats for a daira', ()=>{
     expect(getBaladyiatsForDaira(mockData)("foo")).toBeNull();
   });
 
-  it('should return null if the the there is no daira', () => {
+  it('should return null if the there is no daira', () => {
     expect(getBaladyiatsForDaira(mockData)()).toBeNull();
+  });
+  
+    it('should return null if the daira has no baladiats', () => {
+    expect(getBaladyiatsForDaira(DAIRA_WITHOUT_BALADIATS)("ORAN")).toBeNull();
   });
 
   it('should return baladyiats for given daira in English', ()=>{
