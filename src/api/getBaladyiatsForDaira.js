@@ -24,7 +24,7 @@ const getBaladyiatsForDaira = data =>
       || d.name_en.toLowerCase() === dairaName
       || d.name_ar === dairaName
       )
-    ) || null;
+    );
 
     if(!wilaya) return null;
 
