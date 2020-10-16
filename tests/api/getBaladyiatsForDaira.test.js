@@ -63,8 +63,8 @@ describe('Get baladyiats for a daira', ()=>{
   it('should return null if the there is no daira', () => {
     expect(getBaladyiatsForDaira(mockData)()).toBeNull();
   });
-  
-    it('should return null if the daira has no baladiats', () => {
+
+  it('should return null if the daira has no baladiats', () => {
     expect(getBaladyiatsForDaira(DAIRA_WITHOUT_BALADIATS)("ORAN")).toBeNull();
   });
 
