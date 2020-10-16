@@ -32,9 +32,9 @@ const getBaladyiatsForDaira = data =>
       dn.name.toLowerCase() === dairaName
     || dn.name_en.toLowerCase() === dairaName
     || dn.name_ar === dairaName
-    ) || null;
+    );
 
-    return baladyiats;
+    return baladyiats || null;
   };
 
 module.exports = getBaladyiatsForDaira;
