@@ -98,7 +98,15 @@ describe('get matching wilaya', ()=> {
           code: 1250,
           name: "BORDJ BADJI MOKHTAR (wilaya déléguée)",
           name_ar: "برج باجي مختار (ولاية منتدبة)",
-          name_en: "BORDJ BADJI MOKHTAR (wilaya déléguée)"
+          name_en: "BORDJ BADJI MOKHTAR (wilaya déléguée)",
+          baladyiats: [
+            {
+              code: 4702,
+              name: "EL MENIAA",
+              name_en: "EL MENIAA",
+              name_ar: "المنيعة"
+            },
+          ]
         }
       ]
     }
@@ -160,7 +168,16 @@ describe('get matching wilaya', ()=> {
   });
 
   it('should return matching wilaya object with baladyia arabe name', () => {
-    const result = getWilayaByBaladyiaName(noBaladyiaMockData)("المنيعة");
+    const result = getWilayaByBaladyiaName(noBaladyiaMockData)("امنيعة");
     expect(result).toBeNull();
   });
+
+  it('should return matching wilaya object with baladyia arabe name', () => {
+    const result = getWilayaByBaladyiaName(noBaladyiaMockData)("المنيعة", ["mattricule"]);
+    expect(result).toEqual({
+      mattricule: 12,
+    });
+  });
 });
+
+
