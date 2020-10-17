@@ -1,4 +1,4 @@
-const MIN_DAIRA_LENGTH = 3;
+const MIN_DAIRA_NAME_LENGTH = 3;
 
 const getBaladyiatsForDaira = data =>
 /**
@@ -12,7 +12,7 @@ const getBaladyiatsForDaira = data =>
  */
 
   (daira) => {
-    if (!daira || daira.trim().length < MIN_DAIRA_LENGTH) {
+    if (!daira || daira.trim().length < MIN_DAIRA_NAME_LENGTH) {
       return null;
     }
 
