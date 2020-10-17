@@ -30,7 +30,7 @@ module.exports = {
   getPhoneCodesForWilaya: getPhoneCodesForWilaya(_getData()),
   getPhoneCodeForWilaya: getPhoneCodeForWilaya(_getData()),
   getBaladyiatsForWilaya: getBaladyiatsForWilaya(_getData()),
-  getWilayaByBaladyiaName:getWilayaByBaladyiaName(_getData()),
+  getWilayaByBaladyiaName: getWilayaByBaladyiaName(_getData()),
   utils: {
     wilayaProjection,
     isValidWilayaCode,
