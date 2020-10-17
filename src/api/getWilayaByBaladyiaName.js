@@ -16,22 +16,19 @@ const getWilayaByBaladyiaName = (data) =>
     if (!baladyia || baladyia.trim().length < 3) {
       return null;
     }
-    const baladyiaName = baladyia.toLowerCase();
 
+    const baladyiaName = baladyia.toLowerCase();
     const wilaya = data.find(
       w => w.dairats.find(
       (d) => {
         if(d.baladyiats){
-          return d.baladyiats.find((b) => b.name.toLowerCase() === baladyiaName);
+          return d.baladyiats.find((b) => b.name.toLowerCase() === baladyiaName || b.name_en.toLowerCase() === baladyiaName || b.name_ar === baladyiaName);
         }
-        return false;
+        return null;
       })
     )
 
-
-    // console.log(data[0].dairats[0].baladyiats);
-
-    return wilaya;
+    return projectWilaya(wilaya , projection);
   }
 
 
