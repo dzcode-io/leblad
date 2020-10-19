@@ -1,6 +1,3 @@
-// const ES_SENIA = "Es-Sénia";
-
-
 describe('get matching wilaya', ()=> {
   const mockData = [{
     mattricule: 47,
