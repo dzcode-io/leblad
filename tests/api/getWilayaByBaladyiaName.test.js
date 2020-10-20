@@ -81,7 +81,6 @@ describe('get matching wilaya', ()=> {
 
     expect(result).toEqual(mockData[0]);
   });
- 
   it('should return matching wilaya object for arabic baladyia name', () => {
     const result = getWilayaByBaladyiaName(mockData)("غرداية");
 
@@ -106,4 +105,3 @@ describe('get matching wilaya', ()=> {
     expect(result).toEqual(noBaladyiaMockData[0]);
   });
 });
-
