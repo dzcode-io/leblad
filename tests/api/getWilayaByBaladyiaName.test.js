@@ -63,33 +63,33 @@ describe('get matching wilaya', ()=> {
 
     expect(typeof fn).toBe('function');
   });
-  it('should return null if the wilaya with the given baladyia invalid name', () => {
+  it('should return null for invalid baladyia name', () => {
     const result = getWilayaByBaladyiaName(mockData)("fo");
 
     expect(result).toBeNull();
   });
 
-  it('should return matching wilaya object with name', () => {
+  it('should return matching wilaya object for baladyia name', () => {
     const result = getWilayaByBaladyiaName(mockData)("GHARDAIA");
 
     expect(result).toEqual(mockData[0]);
   });
-  it('should return matching wilaya object with arabic name', () => {
+  it('should return matching wilaya object for arabic baladyia name', () => {
     const result = getWilayaByBaladyiaName(mockData)("غرداية");
 
     expect(result).toEqual(mockData[0]);
   });
 
-  it('should return matching wilaya object with english name', () => {
+  it('should return matching wilaya for baladyia english name', () => {
     const result = getWilayaByBaladyiaName(mockData)("GHARDAIA");
     expect(result).toEqual(mockData[0]);
   });
-  it('should return matching wilaya object with baladyia arabe name', () => {
+  it('should return null object for invalid baladyia arabe name', () => {
     const result = getWilayaByBaladyiaName(noBaladyiaMockData)("امنيعة");
     expect(result).toBeNull();
   });
 
-  it('should return matching wilaya object with baladyia arabe name', () => {
+  it('should return matching wilaya object for baladyia arabe name ( wilaya without dairats list )', () => {
     const result = getWilayaByBaladyiaName(noBaladyiaMockData)("المنيعة");
     expect(result).toEqual(noBaladyiaMockData[0]);
   });

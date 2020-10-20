@@ -229,6 +229,22 @@ const { getBaladyiatsForWilaya } = require('@dzcode-io/leblad');
 console.log(getBaladyiatsForWilaya(31)); // will print the baladyiats list ([{ code: 3125, name: 'AIN KERMA'..},{ code: 3105,name: 'ES SENIA',}])
 ```
 
+#### getWilayaByBaladyiaName(baladyiaName: number, projection?: string[])
+
+Takes a Baladyia name and returns wilaya in which baladyia is located.
+
+**Arguments**
+
+- `wilayaCode: number` (**required**) the Baladyia name
+- `projection: string[]` (optional) Array of Wilaya Object attributes
+
+**Examples**
+
+```javascript
+const { getWilayaByBaladyiaName } = require('@dzcode-io/leblad');
+
+console.log(getWilayaByBaladyiaName('ES SENIA')); // will print the wilaya object ({name: "Oran"...})
+```
 
 ## Helper methods
 
@@ -266,6 +282,7 @@ Check if a given zip code is valid (i.e is an integer between 1000 and 48073).
 **Arguments**
 
 - `code: (number|string)` (**required**) zip code
+
 
 ## Local development
 

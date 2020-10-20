@@ -6,11 +6,12 @@ const getWilayaByBaladyiaName = (data) =>
    *
    * @example Get wilaya for Baladyia (name:Es-sénia)
    *
-   * //returns [21, 23]
-   * getPhoneCodesForWilaya(16)
+   * //returns {name : "Oran"}
+   * getWilayaByBaladyiaName("ES SENIA")
    *
-   * @param { Number } wilayaCode wilaya code (mattricule)
-   * @returns { Number[] | null } Returns wilaya's phone codes, or null
+   * @param { string } baladyia name
+   * @param { String[] } projection a list of baladyia object attributes to keep
+   * @returns { Object | null } Returns wilaya's object, or null
    */
   (baladyia, projection) => {
     if (!baladyia || baladyia.trim().length < 3) {
