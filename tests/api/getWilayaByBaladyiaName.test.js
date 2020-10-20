@@ -14,7 +14,13 @@ describe('get matching wilaya', ()=> {
             name: "GHARDAIA",
             name_en: "GHARDAIA",
             name_ar: "غرداية"
-          }
+          },
+          {
+            code: 4702,
+            name: "EL MENIAA",
+            name_en: "EL MENIAA",
+            name_ar: "المنيعة"
+          },
         ]
       },
     ]
@@ -63,6 +69,7 @@ describe('get matching wilaya', ()=> {
 
     expect(typeof fn).toBe('function');
   });
+
   it('should return null for invalid baladyia name', () => {
     const result = getWilayaByBaladyiaName(mockData)("fo");
 
@@ -80,17 +87,21 @@ describe('get matching wilaya', ()=> {
     expect(result).toEqual(mockData[0]);
   });
 
-  it('should return matching wilaya for baladyia english name', () => {
-    const result = getWilayaByBaladyiaName(mockData)("GHARDAIA");
+  it('should return matching wilaya for english baladyia name', () => {
+    const result = getWilayaByBaladyiaName(mockData)("EL MENIAA");
+
     expect(result).toEqual(mockData[0]);
   });
-  it('should return null object for invalid baladyia arabe name', () => {
+
+  it('should return null object for invalid arabic baladyia name', () => {
     const result = getWilayaByBaladyiaName(noBaladyiaMockData)("امنيعة");
+
     expect(result).toBeNull();
   });
 
   it('should return matching wilaya object for baladyia arabe name ( wilaya without dairats list )', () => {
     const result = getWilayaByBaladyiaName(noBaladyiaMockData)("المنيعة");
+
     expect(result).toEqual(noBaladyiaMockData[0]);
   });
 });

@@ -1,5 +1,7 @@
 const projectWilaya = require('../utils/projections/wilayaProjection');
 
+const MIN_BALADYA_LENGTH = 3;
+
 const getWilayaByBaladyiaName = (data) =>
   /**
    * Takes a baladyia name and return the wilaya of baladyia.
@@ -14,7 +16,7 @@ const getWilayaByBaladyiaName = (data) =>
    * @returns { Object | null } Returns wilaya's object, or null
    */
   (baladyia, projection) => {
-    if (!baladyia || baladyia.trim().length < 3) {
+    if (!baladyia || baladyia.trim().length < MIN_BALADYA_LENGTH) {
       return null;
     }
 
