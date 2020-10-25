@@ -53,6 +53,7 @@ describe('get matching wilaya', ()=> {
 
     expect(result).toEqual(mockData[0].dairats[0]);
   });
+
   it('should return matching wilaya object for arabic baladyia name', () => {
     const result = getDairaByBaladyiaName(mockData)("غرداية");
 

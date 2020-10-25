@@ -4,6 +4,18 @@ const _hasName = baladyiaName =>
   b => b.name === baladyiaName || b.name_ar === baladyiaName || b.name_en === baladyiaName;
 
 const getDairaByBaladyiaName = data =>
+/**
+   * Takes a baladyia name and returns the daira of baladyia.
+   *
+   * @example Get daira for baladyia (name:Es-sénia)
+   *
+   *
+   * getDairaByBaladyiaName("ES SENIA")
+   *
+   * @param { string } baladyia name
+   * @param { String[] } projection a list of baladyia object attributes to keep
+   * @returns { Object | null } Returns baladyia object, or null
+   */
   (baladyiaName, projection) => {
     const hasBaladyiaName = _hasName(baladyiaName);
     let d;
