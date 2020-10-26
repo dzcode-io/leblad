@@ -176,6 +176,22 @@ const { getPhoneCodeForWilaya } = require('@dzcode-io/leblad');
 console.log(getPhoneCodeForWilaya(16)); //returns first phone code for wilaya 16
 ```
 
+#### getWilayaByDairaName(dairaName: string)
+
+Takes a Daira name (French, English or Arabic) and returns either the corresponding wilaya or null.
+
+**Arguments**
+
+- `dairaName: string` (**required**) the Daira name
+
+**Examples**
+
+```javascript
+const { getWilayaByDairaName } = require('@dzcode-io/leblad');
+
+console.log(getWilayaByDairaName('Charouine')); //returns wilaya object
+```
+
 ## Helper methods
 
 #### wilayaProjection(wilaya: (object|array), projection?: string[])

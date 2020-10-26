@@ -9,7 +9,8 @@
     "test.watch": "jest --watch",
     "test.mutation": "stryker run",
     "lint": "eslint .",
-    "update-dataset": "node update-wilaya-dataset.js"
+    "update-dataset": "node update-wilaya-dataset.js",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
     "@stryker-mutator/jest-runner": "^3.3.1",
     "@types/jest": "^26.0.13",
     "axios": "^0.20.0",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -47,5 +50,8 @@
     "hooks": {
       "pre-commit": "npm run lint && npm run test"
     }
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
