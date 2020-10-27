@@ -1,6 +1,5 @@
-const _hasName = baladyiaName =>{
-  const name = baladyiaName.toLowerCase();
-  return b => b.name.toLowerCase() === name || b.name_ar.toLowerCase() === name || b.name_en.toLowerCase() === name;
+const _hasName = baladyiaName => {
+  return b => b.name.toLowerCase() === baladyiaName || b.name_ar === baladyiaName || b.name_en.toLowerCase() === baladyiaName;
 };
 
 module.exports = _hasName;
