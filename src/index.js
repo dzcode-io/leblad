@@ -16,6 +16,7 @@ const getBaladyiatsForWilaya = require('./api/getBaladyiatsForWilaya');
 const getBaladyiatsForDaira = require('./api/getBaladyiatsForDaira');
 const getWilayaByBaladyiaName = require('./api/getWilayaByBaladyiaName');
 const getDairaByBaladyiaName = require('./api/getDairaByBaladyiaName');
+const hasName = require('./utils/hasName');
 
 const data = require('../data/WilayaList.json');
 
@@ -39,6 +40,7 @@ module.exports = {
     wilayaProjection,
     isValidWilayaCode,
     isValidZipCode,
+    hasName,
   },
 };
 

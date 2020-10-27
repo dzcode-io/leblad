@@ -1,7 +1,9 @@
 const projectWilaya = require("../utils/projections/wilayaProjection");
 
-const _hasName = baladyiaName =>
-  b => b.name === baladyiaName || b.name_ar === baladyiaName || b.name_en === baladyiaName;
+const _hasName = baladyiaName => {
+  const name = baladyiaName.toLowerCase();
+  return b => b.name.toLowerCase() === name || b.name_ar.toLowerCase() === name || b.name_en.toLowerCase() === name;
+};
 
 const getDairaByBaladyiaName = data =>
 /**
