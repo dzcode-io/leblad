@@ -30,7 +30,6 @@ describe("Le'Bled SDK", () => {
         wilayaProjection: expect.any(Function),
         isValidZipCode: expect.any(Function),
         isValidWilayaCode: expect.any(Function),
-        hasName: expect.any(Function),
       },
     });
   });
