@@ -49,7 +49,7 @@ describe('get matching wilaya', ()=> {
   });
 
   it('should return matching daira object for baladyia name', () => {
-    const result = getDairaByBaladyiaName(mockData)("GHARDAIA");
+    const result = getDairaByBaladyiaName(mockData)("GHARDAIA".toLowerCase());
 
     expect(result).toEqual(mockData[0].dairats[0]);
   });
@@ -61,7 +61,7 @@ describe('get matching wilaya', ()=> {
   });
 
   it('should return matching daira for english baladyia name', () => {
-    const result = getDairaByBaladyiaName(mockData)("EL MENIAA");
+    const result = getDairaByBaladyiaName(mockData)("EL MENIAA".toLowerCase());
 
     expect(result).toEqual(mockData[0].dairats[0]);
   });

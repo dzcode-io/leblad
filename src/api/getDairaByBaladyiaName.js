@@ -1,7 +1,5 @@
 const projectWilaya = require("../utils/projections/wilayaProjection");
-
-const _hasName = baladyiaName =>
-  b => b.name === baladyiaName || b.name_ar === baladyiaName || b.name_en === baladyiaName;
+const _hasName = require('../utils/hasName');
 
 const getDairaByBaladyiaName = data =>
 /**
