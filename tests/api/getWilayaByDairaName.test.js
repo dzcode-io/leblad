@@ -1,6 +1,7 @@
 const OUED_RHIOU = "OUED RHIOU";
-const OUED_RHIOU_EN = `${OUED_RHIOU  }_en`;
-describe('get matching wilaya', ()=> {
+const OUED_RHIOU_EN = `${OUED_RHIOU}_en`;
+
+describe('get wilaya by daira name', () => {
   const mockData = [{
     mattricule: 48,
     name: "Relizane",
@@ -12,7 +13,7 @@ describe('get matching wilaya', ()=> {
 
   let getWilayaByDairaName;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     getWilayaByDairaName = require('../../src/api/getWilayaByDairaName');
   });
 

@@ -1,5 +1,6 @@
-const hasName = baladyiaName => {
-  return b => b.name.toLowerCase() === baladyiaName || b.name_ar === baladyiaName || b.name_en.toLowerCase() === baladyiaName;
+const hasName = givenName => {
+  // eslint-disable-next-line camelcase
+  return ({ name, name_ar, name_en }) => name.toLowerCase() === givenName || name_ar === givenName || name_en.toLowerCase() === givenName;
 };
 
 module.exports = hasName;
