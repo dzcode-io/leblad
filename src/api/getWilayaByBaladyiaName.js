@@ -1,3 +1,4 @@
+const _hasName = require('../utils/hasName');
 const projectWilaya = require('../utils/projections/projectObject');
 
 const MIN_BALADYA_LENGTH = 3;
@@ -21,11 +22,12 @@ const getWilayaByBaladyiaName = (data) =>
     }
 
     const baladyiaName = baladyia.toLowerCase();
+    const hasBaladyiaName = _hasName(baladyiaName);
     const wilaya = data.find(
       w => w.dairats.find(
         (d) => {
           if(d.baladyiats){
-            return d.baladyiats.find((b) => b.name.toLowerCase() === baladyiaName || b.name_en.toLowerCase() === baladyiaName || b.name_ar === baladyiaName);
+            return d.baladyiats.find((b) => hasBaladyiaName(b));
           }
           return null;
         })

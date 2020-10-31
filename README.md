@@ -235,7 +235,7 @@ Takes a Baladyia name and returns wilaya in which baladyia is located.
 
 **Arguments**
 
-- `wilayaCode: number` (**required**) the Baladyia name
+- `baladyiaName: number` (**required**) the Baladyia name
 - `projection: string[]` (optional) Array of Wilaya Object attributes
 
 **Examples**
@@ -244,6 +244,23 @@ Takes a Baladyia name and returns wilaya in which baladyia is located.
 const { getWilayaByBaladyiaName } = require('@dzcode-io/leblad');
 
 console.log(getWilayaByBaladyiaName('ES SENIA')); // will print the wilaya object ({name: "Oran"...})
+```
+
+#### getDairaByBaladyiaName(baladyiaName: number, projection?: string[])
+
+Takes a Baladyia name and returns daira in which baladyia is located.
+
+**Arguments**
+
+- `baladyiaName: number` (**required**) the Baladyia name
+- `projection: string[]` (optional) Array of Wilaya Object attributes
+
+**Examples**
+
+```javascript
+const { getDairaByBaladyiaName } = require('@dzcode-io/leblad');
+
+console.log(getDairaByBaladyiaName('ES SENIA')); // will print the daira object ({name: "ES SENIA"...})
 ```
 
 ## Helper methods
