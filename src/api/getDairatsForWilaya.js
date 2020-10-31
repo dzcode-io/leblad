@@ -1,4 +1,4 @@
-const projectWilaya = require('../utils/projections/wilayaProjection');
+const projectDaira = require('../utils/projections/projectObject');
 
 const getDairatsForWilaya = data =>
 /**
@@ -14,7 +14,7 @@ const getDairatsForWilaya = data =>
 
   (mattricule, projection) => {
     const { dairats } = data.find(w => w.mattricule === mattricule) || {};
-    return projectWilaya(dairats, projection);
+    return projectDaira(dairats, projection);
   };
 
 module.exports = getDairatsForWilaya;

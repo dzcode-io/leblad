@@ -1,4 +1,4 @@
-const projectWilaya = require("../utils/projections/wilayaProjection");
+const projectDaira = require("../utils/projections/projectObject");
 const _hasName = require('../utils/hasName');
 
 const getDairaByBaladyiaName = data =>
@@ -28,7 +28,7 @@ const getDairaByBaladyiaName = data =>
       }
     }
 
-    return projectWilaya(d, projection);
+    return projectDaira(d, projection);
   };
 
 module.exports = getDairaByBaladyiaName;

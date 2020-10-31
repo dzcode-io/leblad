@@ -1,7 +1,7 @@
 // internal functions
 const isValidWilayaCode = require('./utils/isValidWilayaCode');
 const isValidZipCode = require('./utils/isValidZipCode');
-const wilayaProjection = require('./utils/projections/wilayaProjection');
+const projectObject = require('./utils/projections/projectObject');
 // APIs
 const getWilayaList = require('./api/getWilayaList');
 const getAdjacentWilayas = require('./api/getAdjacentWilayas');
@@ -36,7 +36,7 @@ module.exports = {
   getWilayaByBaladyiaName: getWilayaByBaladyiaName(_getData()),
   getDairaByBaladyiaName: getDairaByBaladyiaName(_getData()),
   utils: {
-    wilayaProjection,
+    projectObject,
     isValidWilayaCode,
     isValidZipCode,
   },

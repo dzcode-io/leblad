@@ -1,5 +1,5 @@
 const _hasName = require('../utils/hasName');
-const projectWilaya = require('../utils/projections/wilayaProjection');
+const projectWilaya = require('../utils/projections/projectObject');
 
 const MIN_BALADYA_LENGTH = 3;
 
