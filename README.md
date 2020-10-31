@@ -248,19 +248,19 @@ console.log(getWilayaByBaladyiaName('ES SENIA')); // will print the wilaya objec
 
 ## Helper methods
 
-#### wilayaProjection(wilaya: (object|array), projection?: string[])
+#### projectObject(data: (object|array), projection?: string[])
 
-Return an object or an array of object with only wilaya attribute you select in the `projection` attributes array.
+Return an object or an array of object with only data (example: Wilaya, Daira, Baladiya) attribute you select in the `projection` attributes array.
 
 **Arguments**
 
-- `wilaya: (object|array)` (**required**) A wilaya object or an array of wilaya objects
-- `projection: string[]` (optional) Array of Wilaya Object attributes
+- `data: (object|array)` (**required**) A data object or an array of data objects(Wilayas, Dairas, Baladiyas)
+- `projection: string[]` (optional) Array of data Object attributes
 
 **Examples**
 
 ```javascript
-const { projectWilaya } = require('@dzcode-io/leblad').utils;
+const { projectObject: projectWilaya } = require('@dzcode-io/leblad').utils;
 
 ...
 

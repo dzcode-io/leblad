@@ -1,4 +1,4 @@
-const projectWilaya = require('../utils/projections/wilayaProjection');
+const projectWilaya = require('../utils/projections/projectObject');
 
 const MIN_DAIRA_LENGTH = 3;
 

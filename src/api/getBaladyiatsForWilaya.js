@@ -1,4 +1,4 @@
-const projectWilaya = require("../utils/projections/wilayaProjection");
+const projectBaladiya = require("../utils/projections/projectObject");
 
 const getBaladyiatsForWilaya = data =>
 /**
@@ -11,14 +11,14 @@ const getBaladyiatsForWilaya = data =>
    *
    * @param { Number } mattricule wilaya code (mattricule)
    * @param { String[] } projection a list of Baladyia object attributes to keep
-   * @returns { Object[] | null }
+   * @returns { Object[] | null } list of all baladiyas for wilaya
    */
 
   (mattricule, projections) => {
     const wilaya = data.find(w => w.mattricule === mattricule);
     if (wilaya) {
       const baladyiats = wilaya.dairats.reduce((acc, daira) => [...acc, ...daira.baladyiats], []);
-      return projectWilaya(baladyiats, projections);
+      return projectBaladiya(baladyiats, projections);
     }
     return null;
   };

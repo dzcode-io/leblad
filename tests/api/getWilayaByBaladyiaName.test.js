@@ -1,4 +1,4 @@
-describe('get matching wilaya', ()=> {
+describe('get matching wilaya by baladyia name', ()=> {
   const mockData = [{
     mattricule: 47,
     name: "Ghardaïa",
@@ -81,6 +81,7 @@ describe('get matching wilaya', ()=> {
 
     expect(result).toEqual(mockData[0]);
   });
+
   it('should return matching wilaya object for arabic baladyia name', () => {
     const result = getWilayaByBaladyiaName(mockData)("غرداية");
 
