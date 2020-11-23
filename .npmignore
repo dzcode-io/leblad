@@ -11,3 +11,6 @@ stryker.conf.js
 update-wilaya-dataset.js
 .stryker-tmp/*
 reports/*
+.all-contributorsrc
+.eslintignore
+*.tgz

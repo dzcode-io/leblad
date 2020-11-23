@@ -1,13 +1,15 @@
 {
   "name": "@dzcode-io/leblad",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Algerian administrative areas package",
   "main": "src/index.js",
+  "private": false,
   "scripts": {
     "test": "jest",
     "test.watch": "jest --watch",
     "test.mutation": "stryker run",
     "lint": "eslint .",
+    "lint.fix": "eslint . --fix",
     "update-dataset": "node update-wilaya-dataset.js"
   },
   "repository": {
@@ -27,20 +29,19 @@
   },
   "homepage": "https://github.com/dzcode-io/leblad#readme",
   "devDependencies": {
-    "@stryker-mutator/core": "^3.3.1",
-    "@stryker-mutator/javascript-mutator": "^3.3.1",
-    "@stryker-mutator/jest-runner": "^3.3.1",
-    "@types/jest": "^26.0.13",
-    "axios": "^0.20.0",
-    "eslint": "^7.8.1",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "@stryker-mutator/core": "^4.1.2",
+    "@stryker-mutator/jest-runner": "^4.1.2",
+    "@types/jest": "^26.0.15",
+    "axios": "^0.21.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-sonarjs": "^0.5.0",
     "husky": "^4.3.0",
-    "jest": "^26.4.2",
-    "prettier": "^2.1.1"
+    "jest": "^26.6.3",
+    "prettier": "^2.2.0"
   },
   "husky": {
     "hooks": {

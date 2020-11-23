@@ -31,8 +31,8 @@ describe('Get Zip-Codes for wilaya', () => {
     expect(typeof getZipCodesForWilaya(mockData)).toBe('function');
   });
 
-  it('should return undefined if the wilaya with the given code is not found', () => {
-    expect(getZipCodesForWilaya(mockData)(289)).toBeUndefined();
+  it('should return null if the wilaya with the given code is not found', () => {
+    expect(getZipCodesForWilaya(mockData)(289)).toBeNull();
   });
 
   it('should return Zip-Codes for given wilaya code', () => {

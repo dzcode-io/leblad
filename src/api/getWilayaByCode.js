@@ -1,4 +1,4 @@
-const projectWilaya = require('../utils/projections/wilayaProjection');
+const projectWilaya = require('../utils/projections/projectObject');
 
 const getWilayaByCode = data =>
 /**
@@ -10,7 +10,7 @@ const getWilayaByCode = data =>
  *
  * @param { Number} mattricule The Wilaya's "matricule"
  * @param {String[]} projection a list of  wilaya object attributes to keep
- * @returns { Object | undefined } Returns matching wilaya, or undefined
+ * @returns { Object | null } Returns matching wilaya, or null
  */
   (mattricule, projection) =>  {
     const wilaya = data.find(w => w.mattricule === mattricule);

@@ -1,0 +1,109 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Fcmam5",
+      "name": "Fortas Abdeldjalil",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9090674?v=4",
+      "profile": "https://fcmam5.me/",
+      "contributions": [
+        "maintenance",
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "ZibanPirate",
+      "name": "Zakaria Mansouri",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20110076?v=4",
+      "profile": "http://zakiii.com",
+      "contributions": [
+        "tool",
+        "review"
+      ]
+    },
+    {
+      "login": "oussamabouchikhi",
+      "name": "Oussama Bouchikhi",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/45850487?v=4",
+      "profile": "http://oussamabouchikhi.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "abachi",
+      "name": "Nasser Abachi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12300606?v=4",
+      "profile": "http://abachi.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "anuragsati",
+      "name": "Anurag sati",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/52669445?v=4",
+      "profile": "https://github.com/anuragsati",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AmineVolk",
+      "name": "HamdiAmine",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/37228315?v=4",
+      "profile": "https://github.com/AmineVolk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "xxKeefer",
+      "name": "xxKeefer",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16760467?v=4",
+      "profile": "http://www.keefer.tech",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "joeylnguyen",
+      "name": "Joey Nguyen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59431792?v=4",
+      "profile": "https://github.com/joeylnguyen",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Redaloukil",
+      "name": "LOUKIL Mohamed Reda",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25663785?v=4",
+      "profile": "https://redaloukil.github.io/",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    },
+    {
+      "login": "spertch9a",
+      "name": "Fortas Oussama Ilyes",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16373348?v=4",
+      "profile": "https://github.com/spertch9a",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "leblad",
+  "projectOwner": "dzcode-io",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

@@ -8,12 +8,12 @@ const getZipCodesForWilaya = (data) =>
   * //returns Array containing Zip-codes for respective wilaya
   *
   * @param { Number} wilayaCode The Wilaya's "matricule"
-  * @returns { Number[] | undefined } Returns Zip-codes for wilaya, or undefined
+  * @returns { Number[] | null } Returns Zip-codes for wilaya, or null
   */
 
   (wilayaCode) => {
     const { postalCodes } = data.find((w) => w.mattricule === wilayaCode) || {};
-    return postalCodes;
+    return postalCodes || null;
   };
 
 module.exports = getZipCodesForWilaya;

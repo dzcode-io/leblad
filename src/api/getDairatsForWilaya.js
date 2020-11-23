@@ -1,4 +1,4 @@
-const projectWilaya = require('../utils/projections/wilayaProjection');
+const projectDaira = require('../utils/projections/projectObject');
 
 const getDairatsForWilaya = data =>
 /**
@@ -9,12 +9,12 @@ const getDairatsForWilaya = data =>
  *
  * @param { Number} mattricule The Wilaya's "matricule"
  * @param {String[]} projection a list of daira object attributes to keep
- * @returns { object[] | undefined } Returns All dairats for wilaya, or undefined
+ * @returns { object[] | null } Returns All dairats for wilaya, or null
  */
 
   (mattricule, projection) => {
     const { dairats } = data.find(w => w.mattricule === mattricule) || {};
-    return projectWilaya(dairats, projection);
+    return projectDaira(dairats, projection);
   };
 
 module.exports = getDairatsForWilaya;
