@@ -1,6 +1,6 @@
 {
   "name": "@dzcode-io/leblad",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Algerian administrative areas package",
   "main": "src/index.js",
   "private": false,
