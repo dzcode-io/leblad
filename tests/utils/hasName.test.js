@@ -5,6 +5,7 @@ describe('check if hasName exists or not', () => {
     name: "ES SENIA",
     name_ar: "السانية",
     name_en: "ES SENIAA",
+    name_ber: 'ⵙ ⵙⵏⵉⴰ'
   };
 
   it('should return true if object has correct name', ()=> {
@@ -17,6 +18,10 @@ describe('check if hasName exists or not', () => {
 
   it('should return true if object has correct english name', ()=> {
     expect(hasName("ES SENIAA".toLowerCase())(mockObject)).toBe(true);
+  });
+
+  it('should return true if object has correct tifinagh name', ()=> {
+    expect(hasName("ⵙ ⵙⵏⵉⴰ".toLowerCase())(mockObject)).toBe(true);
   });
 
   it('should false if object does not have name', ()=> {
