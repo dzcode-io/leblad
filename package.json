@@ -29,19 +29,19 @@
   },
   "homepage": "https://github.com/dzcode-io/leblad#readme",
   "devDependencies": {
-    "@stryker-mutator/core": "^4.1.2",
-    "@stryker-mutator/jest-runner": "^4.1.2",
-    "@types/jest": "^26.0.15",
-    "axios": "^0.21.0",
-    "eslint": "^7.14.0",
+    "@stryker-mutator/core": "^4.3.1",
+    "@stryker-mutator/jest-runner": "^4.3.1",
+    "@types/jest": "^26.0.20",
+    "axios": "^0.21.1",
+    "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-sonarjs": "^0.5.0",
-    "husky": "^4.3.0",
+    "husky": "^4.3.8",
     "jest": "^26.6.3",
-    "prettier": "^2.2.0"
+    "prettier": "^2.2.1"
   },
   "husky": {
     "hooks": {
