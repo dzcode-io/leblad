@@ -1,23 +1,25 @@
-describe('get phone codes for a wilaya', ()=> {
-  const mockData = [{
-    mattricule: 16,
-    name: "Alger",
-    phoneCodes: [21, 23]
-  },
-  {
-    mattricule: 31,
-    name: "Oran",
-    phoneCodes: [41]
-  },
-  {
-    mattricule: 48,
-    name: "Relizane",
-    phoneCodes: [46],
-  }];
+describe('get phone codes for a wilaya', () => {
+  const mockData = [
+    {
+      mattricule: 16,
+      name: 'Alger',
+      phoneCodes: [21, 23],
+    },
+    {
+      mattricule: 31,
+      name: 'Oran',
+      phoneCodes: [41],
+    },
+    {
+      mattricule: 48,
+      name: 'Relizane',
+      phoneCodes: [46],
+    },
+  ];
 
   let getPhoneCodesForWilaya;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     getPhoneCodesForWilaya = require('../../src/api/getPhoneCodesForWilaya');
   });
 

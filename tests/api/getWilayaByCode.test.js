@@ -1,20 +1,22 @@
-describe('get matching wilaya', ()=> {
-  const mockData = [{
-    mattricule: 1,
-    name: "Adrar"
-  },
-  {
-    mattricule: 2,
-    name: "Chlef"
-  },
-  {
-    mattricule: 3,
-    name: "Laghouat"
-  }];
+describe('get matching wilaya', () => {
+  const mockData = [
+    {
+      mattricule: 1,
+      name: 'Adrar',
+    },
+    {
+      mattricule: 2,
+      name: 'Chlef',
+    },
+    {
+      mattricule: 3,
+      name: 'Laghouat',
+    },
+  ];
 
   let getWilayaByCode;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     getWilayaByCode = require('../../src/api/getWilayaByCode');
   });
 
@@ -39,7 +41,7 @@ describe('get matching wilaya', ()=> {
 
     expect(result).toEqual({
       mattricule: 2,
-      name: "Chlef"
+      name: 'Chlef',
     });
   });
 });

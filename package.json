@@ -1,6 +1,6 @@
 {
   "name": "@dzcode-io/leblad",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Algerian administrative areas package",
   "main": "src/index.js",
   "private": false,
@@ -10,7 +10,8 @@
     "test.mutation": "stryker run",
     "lint": "eslint .",
     "lint.fix": "eslint . --fix",
-    "update-dataset": "node update-wilaya-dataset.js"
+    "update-dataset": "node update-wilaya-dataset.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -29,23 +30,18 @@
   },
   "homepage": "https://github.com/dzcode-io/leblad#readme",
   "devDependencies": {
-    "@stryker-mutator/core": "^4.4.1",
-    "@stryker-mutator/jest-runner": "^4.4.1",
-    "@types/jest": "^26.0.20",
+    "@stryker-mutator/core": "^4.5.1",
+    "@stryker-mutator/jest-runner": "^4.5.1",
+    "@types/jest": "^26.0.22",
     "axios": "^0.21.1",
-    "eslint": "^7.18.0",
+    "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-sonarjs": "^0.5.0",
-    "husky": "^4.3.8",
+    "eslint-plugin-sonarjs": "^0.6.0",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
   }
 }

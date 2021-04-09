@@ -1,4 +1,4 @@
-describe('Get dairats for a wilaya', ()=>{
+describe('Get dairats for a wilaya', () => {
   const mockData = [
     {
       mattricule: 33,
@@ -8,8 +8,8 @@ describe('Get dairats for a wilaya', ()=>{
           baladyiats: [
             {
               code: 3301,
-            }
-          ]
+            },
+          ],
         },
         {
           code: 3302,
@@ -19,8 +19,8 @@ describe('Get dairats for a wilaya', ()=>{
             },
             {
               code: 3305,
-            }
-          ]
+            },
+          ],
         },
         {
           code: 3302,
@@ -30,8 +30,8 @@ describe('Get dairats for a wilaya', ()=>{
             },
             {
               code: 3305,
-            }
-          ]
+            },
+          ],
         },
         {
           code: 3306,
@@ -44,11 +44,11 @@ describe('Get dairats for a wilaya', ()=>{
             },
             {
               code: 3306,
-            }
-          ]
-        }
+            },
+          ],
+        },
       ],
-    }
+    },
   ];
 
   const dairatsForWilaya33 = [
@@ -57,8 +57,8 @@ describe('Get dairats for a wilaya', ()=>{
       baladyiats: [
         {
           code: 3301,
-        }
-      ]
+        },
+      ],
     },
     {
       code: 3302,
@@ -68,8 +68,8 @@ describe('Get dairats for a wilaya', ()=>{
         },
         {
           code: 3305,
-        }
-      ]
+        },
+      ],
     },
     {
       code: 3302,
@@ -79,8 +79,8 @@ describe('Get dairats for a wilaya', ()=>{
         },
         {
           code: 3305,
-        }
-      ]
+        },
+      ],
     },
     {
       code: 3306,
@@ -93,9 +93,9 @@ describe('Get dairats for a wilaya', ()=>{
         },
         {
           code: 3306,
-        }
-      ]
-    }
+        },
+      ],
+    },
   ];
 
   let getDairatsForWilaya;
@@ -116,7 +116,7 @@ describe('Get dairats for a wilaya', ()=>{
     expect(getDairatsForWilaya(mockData)(289)).toBeNull();
   });
 
-  it('should return dairats for given wilaya', ()=>{
+  it('should return dairats for given wilaya', () => {
     expect(getDairatsForWilaya(mockData)(33)).toEqual(dairatsForWilaya33);
   });
 });

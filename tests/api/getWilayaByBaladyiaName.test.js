@@ -1,30 +1,32 @@
-describe('get matching wilaya by baladyia name', ()=> {
-  const mockData = [{
-    mattricule: 47,
-    name: "Ghardaïa",
-    dairats: [
-      {
-        code: 4701,
-        name: "GHARDAIA",
-        name_ar: "غرداية",
-        name_en: "GHARDAIA",
-        baladyiats: [
-          {
-            code: 4701,
-            name: "GHARDAIA",
-            name_en: "GHARDAIA",
-            name_ar: "غرداية"
-          },
-          {
-            code: 4702,
-            name: "EL MENIAA",
-            name_en: "EL MENIAA",
-            name_ar: "المنيعة"
-          },
-        ]
-      },
-    ]
-  }];
+describe('get matching wilaya by baladyia name', () => {
+  const mockData = [
+    {
+      mattricule: 47,
+      name: 'Ghardaïa',
+      dairats: [
+        {
+          code: 4701,
+          name: 'GHARDAIA',
+          name_ar: 'غرداية',
+          name_en: 'GHARDAIA',
+          baladyiats: [
+            {
+              code: 4701,
+              name: 'GHARDAIA',
+              name_en: 'GHARDAIA',
+              name_ar: 'غرداية',
+            },
+            {
+              code: 4702,
+              name: 'EL MENIAA',
+              name_en: 'EL MENIAA',
+              name_ar: 'المنيعة',
+            },
+          ],
+        },
+      ],
+    },
+  ];
 
   const noBaladyiaMockData = [
     {
@@ -32,31 +34,31 @@ describe('get matching wilaya by baladyia name', ()=> {
       dairats: [
         {
           code: 1090,
-          name: "TIMIMOUN (wilaya déléguée)",
-          name_ar: "تيميمون (ولاية منتدبة)",
-          name_en: "TIMIMOUN (wilaya déléguée)"
+          name: 'TIMIMOUN (wilaya déléguée)',
+          name_ar: 'تيميمون (ولاية منتدبة)',
+          name_en: 'TIMIMOUN (wilaya déléguée)',
         },
         {
           code: 1250,
-          name: "BORDJ BADJI MOKHTAR (wilaya déléguée)",
-          name_ar: "برج باجي مختار (ولاية منتدبة)",
-          name_en: "BORDJ BADJI MOKHTAR (wilaya déléguée)",
+          name: 'BORDJ BADJI MOKHTAR (wilaya déléguée)',
+          name_ar: 'برج باجي مختار (ولاية منتدبة)',
+          name_en: 'BORDJ BADJI MOKHTAR (wilaya déléguée)',
           baladyiats: [
             {
               code: 4702,
-              name: "EL MENIAA",
-              name_en: "EL MENIAA",
-              name_ar: "المنيعة"
+              name: 'EL MENIAA',
+              name_en: 'EL MENIAA',
+              name_ar: 'المنيعة',
             },
-          ]
-        }
-      ]
-    }
+          ],
+        },
+      ],
+    },
   ];
 
   let getWilayaByBaladyiaName;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     getWilayaByBaladyiaName = require('../../src/api/getWilayaByBaladyiaName');
   });
 
@@ -71,37 +73,37 @@ describe('get matching wilaya by baladyia name', ()=> {
   });
 
   it('should return null for invalid baladyia name', () => {
-    const result = getWilayaByBaladyiaName(mockData)("fo");
+    const result = getWilayaByBaladyiaName(mockData)('fo');
 
     expect(result).toBeNull();
   });
 
   it('should return matching wilaya object for baladyia name', () => {
-    const result = getWilayaByBaladyiaName(mockData)("GHARDAIA");
+    const result = getWilayaByBaladyiaName(mockData)('GHARDAIA');
 
     expect(result).toEqual(mockData[0]);
   });
 
   it('should return matching wilaya object for arabic baladyia name', () => {
-    const result = getWilayaByBaladyiaName(mockData)("غرداية");
+    const result = getWilayaByBaladyiaName(mockData)('غرداية');
 
     expect(result).toEqual(mockData[0]);
   });
 
   it('should return matching wilaya for english baladyia name', () => {
-    const result = getWilayaByBaladyiaName(mockData)("EL MENIAA");
+    const result = getWilayaByBaladyiaName(mockData)('EL MENIAA');
 
     expect(result).toEqual(mockData[0]);
   });
 
   it('should return null object for invalid arabic baladyia name', () => {
-    const result = getWilayaByBaladyiaName(noBaladyiaMockData)("امنيعة");
+    const result = getWilayaByBaladyiaName(noBaladyiaMockData)('امنيعة');
 
     expect(result).toBeNull();
   });
 
   it('should return matching wilaya object for baladyia arabe name ( wilaya without dairats list )', () => {
-    const result = getWilayaByBaladyiaName(noBaladyiaMockData)("المنيعة");
+    const result = getWilayaByBaladyiaName(noBaladyiaMockData)('المنيعة');
 
     expect(result).toEqual(noBaladyiaMockData[0]);
   });

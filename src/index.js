@@ -9,7 +9,7 @@ const getWilayaByCode = require('./api/getWilayaByCode');
 const getWilayaByZipCode = require('./api/getWilayaByZipCode');
 const getZipCodesForWilaya = require('./api/getZipCodesForWilaya');
 const getDairatsForWilaya = require('./api/getDairatsForWilaya');
-const getWilayaByPhoneCode = require("./api/getWilayaByPhoneCode");
+const getWilayaByPhoneCode = require('./api/getWilayaByPhoneCode');
 const getPhoneCodesForWilaya = require('./api/getPhoneCodesForWilaya');
 const getPhoneCodeForWilaya = require('./api/getPhoneCodeForWilaya');
 const getBaladyiatsForWilaya = require('./api/getBaladyiatsForWilaya');
@@ -41,5 +41,3 @@ module.exports = {
     isValidZipCode,
   },
 };
-
-
