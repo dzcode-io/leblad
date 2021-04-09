@@ -1,25 +1,16 @@
 describe('get wilaya by zip code', () => {
-  const mockData = [{
-    mattricule: 1,
-    name: "Adrar",
-    postalCodes: [
-      1000,
-      1001,
-      1002,
-      1003,
-      1004,
-    ]
-  }, {
-    mattricule: 2,
-    name: "Chlef",
-    postalCodes: [
-      2008,
-      2009,
-      2010,
-      2011,
-      2012,
-    ]
-  }];
+  const mockData = [
+    {
+      mattricule: 1,
+      name: 'Adrar',
+      postalCodes: [1000, 1001, 1002, 1003, 1004],
+    },
+    {
+      mattricule: 2,
+      name: 'Chlef',
+      postalCodes: [2008, 2009, 2010, 2011, 2012],
+    },
+  ];
 
   let getWilayaByZipCode;
 
@@ -44,7 +35,7 @@ describe('get wilaya by zip code', () => {
     expect(result.mattricule).toEqual(2);
   });
 
-  it('should return null if the zip code doesn\'t exists', () => {
+  it("should return null if the zip code doesn't exists", () => {
     const result = getWilayaByZipCode(mockData)(99999);
 
     expect(result).toBeNull();

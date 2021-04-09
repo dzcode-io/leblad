@@ -1,15 +1,17 @@
-const OUED_RHIOU = "OUED RHIOU";
+const OUED_RHIOU = 'OUED RHIOU';
 const OUED_RHIOU_EN = `${OUED_RHIOU}_en`;
 
 describe('get wilaya by daira name', () => {
-  const mockData = [{
-    mattricule: 48,
-    name: "Relizane",
-    dairats: [
-      { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
-      { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
-    ]
-  }];
+  const mockData = [
+    {
+      mattricule: 48,
+      name: 'Relizane',
+      dairats: [
+        { name: 'RELIZANE', name_ar: 'غليزان', name_en: 'RELIZANE' },
+        { name: OUED_RHIOU, name_ar: 'وادي رهيو', name_en: OUED_RHIOU_EN },
+      ],
+    },
+  ];
 
   let getWilayaByDairaName;
 
@@ -28,33 +30,33 @@ describe('get wilaya by daira name', () => {
   });
 
   it('should return null if the wilaya with the given daira is not found', () => {
-    const result = getWilayaByDairaName(mockData)("foo");
+    const result = getWilayaByDairaName(mockData)('foo');
 
     expect(result).toBeNull();
   });
 
-  it('should return null if there\'s no daira', () => {
+  it("should return null if there's no daira", () => {
     const result = getWilayaByDairaName(mockData)();
 
     expect(result).toBeNull();
   });
 
   it('should return null if the wilaya with the given daira is empty', () => {
-    const result = getWilayaByDairaName(mockData)("");
+    const result = getWilayaByDairaName(mockData)('');
 
     expect(result).toBeNull();
   });
 
   it('should return matching wilaya object with arabic name', () => {
-    const result = getWilayaByDairaName(mockData)("وادي رهيو");
+    const result = getWilayaByDairaName(mockData)('وادي رهيو');
 
     expect(result).toEqual({
       mattricule: 48,
-      name: "Relizane",
+      name: 'Relizane',
       dairats: [
-        { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
-        { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
-      ]
+        { name: 'RELIZANE', name_ar: 'غليزان', name_en: 'RELIZANE' },
+        { name: OUED_RHIOU, name_ar: 'وادي رهيو', name_en: OUED_RHIOU_EN },
+      ],
     });
   });
 
@@ -63,11 +65,11 @@ describe('get wilaya by daira name', () => {
 
     expect(result).toEqual({
       mattricule: 48,
-      name: "Relizane",
+      name: 'Relizane',
       dairats: [
-        { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
-        { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
-      ]
+        { name: 'RELIZANE', name_ar: 'غليزان', name_en: 'RELIZANE' },
+        { name: OUED_RHIOU, name_ar: 'وادي رهيو', name_en: OUED_RHIOU_EN },
+      ],
     });
   });
 
@@ -76,11 +78,11 @@ describe('get wilaya by daira name', () => {
 
     expect(res).toEqual({
       mattricule: 48,
-      name: "Relizane",
+      name: 'Relizane',
       dairats: [
-        { name: "RELIZANE", name_ar: "غليزان", name_en: "RELIZANE" },
-        { name: OUED_RHIOU, name_ar: "وادي رهيو", name_en: OUED_RHIOU_EN }
-      ]
+        { name: 'RELIZANE', name_ar: 'غليزان', name_en: 'RELIZANE' },
+        { name: OUED_RHIOU, name_ar: 'وادي رهيو', name_en: OUED_RHIOU_EN },
+      ],
     });
   });
 });

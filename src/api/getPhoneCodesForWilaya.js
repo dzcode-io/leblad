@@ -1,4 +1,4 @@
-const getPhoneCodesForWilaya = data =>
+const getPhoneCodesForWilaya = (data) =>
 /**
    * Takes a wilaya code (mattricule) and returns array of all phone codes for that wilaya.
    *

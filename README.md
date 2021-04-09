@@ -3,7 +3,9 @@
 [<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![codecov](https://codecov.io/gh/dzcode-io/leblad/branches/branch/develop/graph/badge.svg)](https://codecov.io/gh/dzcode-io/leblad/branches) [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fdzcode-io%2Fleblad%2Fdevelop)](https://dashboard.stryker-mutator.io/reports/github.com/dzcode-io/leblad/develop) [![Known Vulnerabilities](https://snyk.io/test/github/dzcode-io/leblad/badge.svg)](https://snyk.io/test/github/dzcode-io/leblad)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A library providing a list of Algerian administrative areas with many useful APIs.
@@ -160,7 +162,7 @@ Takes a daira name and returns the matching wilaya.
 ```javascript
 const { getWilayaByDairaName } = require('@dzcode-io/leblad');
 
-console.log(getWilayaByDairaName("OUED RHIOU")); // will print the wilaya object ({name: "Relizane"...})
+console.log(getWilayaByDairaName('OUED RHIOU')); // will print the wilaya object ({name: "Relizane"...})
 ```
 
 #### getBaladyiatsForDaira(dairaName: String)
@@ -176,9 +178,8 @@ Takes a daira name and returns the matching baladyiats.
 ```javascript
 const { getBaladyiatsForDaira } = require('@dzcode-io/leblad');
 
-console.log(getBaladyiatsForDaira("ORAN")); // will return baladyiats for daira of "Oran"
+console.log(getBaladyiatsForDaira('ORAN')); // will return baladyiats for daira of "Oran"
 ```
-
 
 #### getPhoneCodesForWilaya(wilayaCode: number)
 
@@ -300,7 +301,6 @@ Check if a given zip code is valid (i.e is an integer between 1000 and 48073).
 
 - `code: (number|string)` (**required**) zip code
 
-
 ## Local development
 
 #### Perquisites
@@ -363,11 +363,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
     <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Redaloukil" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/spertch9a"><img src="https://avatars3.githubusercontent.com/u/16373348?v=4" width="100px;" alt=""/><br /><sub><b>Fortas Oussama Ilyes</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=spertch9a" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AMTazi"><img src="https://avatars1.githubusercontent.com/u/17519395?v=4" width="100px;" alt=""/><br /><sub><b>Abdelmounaim TAZI</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AMTazi" title="Code">💻</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

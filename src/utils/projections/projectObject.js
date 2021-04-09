@@ -1,8 +1,5 @@
-const _projectSingleObject = (object, attributes) => {
-  return attributes.reduce((acc, attr) => {
-    return { ...acc, [attr]: object[attr] };
-  }, {});
-};
+const _projectSingleObject = (object, attributes) =>
+  attributes.reduce((acc, attr) => ({ ...acc, [attr]: object[attr] }), {});
 
 /**
  * Get an object or array of object with only the selected properties
@@ -18,7 +15,7 @@ const projectObject = (dataObject, projection) => {
   }
 
   if (Array.isArray(dataObject)) {
-    return dataObject.map(w => _projectSingleObject(w, projection));
+    return dataObject.map((w) => _projectSingleObject(w, projection));
   }
 
   return _projectSingleObject(dataObject, projection);

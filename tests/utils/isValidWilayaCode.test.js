@@ -1,6 +1,6 @@
 const isValidWilayaCode = require('../../src/utils/isValidWilayaCode');
 
-describe('check if a code (matricule) is valid', ()=> {
+describe('check if a code (matricule) is valid', () => {
   it('should return false if the given code is not a valid number', () => {
     expect(isValidWilayaCode(null)).toBe(false);
   });

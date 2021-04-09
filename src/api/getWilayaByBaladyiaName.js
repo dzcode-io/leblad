@@ -23,17 +23,15 @@ const getWilayaByBaladyiaName = (data) =>
 
     const baladyiaName = baladyia.toLowerCase();
     const hasBaladyiaName = _hasName(baladyiaName);
-    const wilaya = data.find(
-      w => w.dairats.find(
-        (d) => {
-          if(d.baladyiats){
-            return d.baladyiats.find((b) => hasBaladyiaName(b));
-          }
-          return null;
-        })
+    const wilaya = data.find((w) =>
+      w.dairats.find((d) => {
+        if (d.baladyiats) {
+          return d.baladyiats.find((b) => hasBaladyiaName(b));
+        }
+        return null;
+      }),
     );
     return projectWilaya(wilaya, projection);
   };
-
 
 module.exports = getWilayaByBaladyiaName;

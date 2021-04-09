@@ -1,6 +1,6 @@
-const projectBaladiya = require("../utils/projections/projectObject");
+const projectBaladiya = require('../utils/projections/projectObject');
 
-const getBaladyiatsForWilaya = data =>
+const getBaladyiatsForWilaya = (data) =>
 /**
    * Takes a wilaya code (mattricule) and returns array of Baladiyates of wilaya.
    *
@@ -15,13 +15,15 @@ const getBaladyiatsForWilaya = data =>
    */
 
   (mattricule, projections) => {
-    const wilaya = data.find(w => w.mattricule === mattricule);
+    const wilaya = data.find((w) => w.mattricule === mattricule);
     if (wilaya) {
-      const baladyiats = wilaya.dairats.reduce((acc, daira) => [...acc, ...daira.baladyiats], []);
+      const baladyiats = wilaya.dairats.reduce(
+        (acc, daira) => [...acc, ...daira.baladyiats],
+        [],
+      );
       return projectBaladiya(baladyiats, projections);
     }
     return null;
   };
-
 
 module.exports = getBaladyiatsForWilaya;
