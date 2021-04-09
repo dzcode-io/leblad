@@ -1,7 +1,7 @@
 describe('get the full Wilaya list', () => {
   let getWilayaList;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     getWilayaList = require('../../src/api/getWilayaList');
   });
 

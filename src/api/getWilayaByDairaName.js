@@ -3,7 +3,7 @@ const _hasName = require('../utils/hasName');
 
 const MIN_DAIRA_LENGTH = 3;
 
-const getWilayaByDairaName = data =>
+const getWilayaByDairaName = (data) =>
   /**
    * Takes a wilaya daira-name and returns its respective wilaya
    *
@@ -22,12 +22,11 @@ const getWilayaByDairaName = data =>
 
     const hasGivenDairaName = _hasName(daira.toLowerCase());
 
-    const wilaya = data.find(w =>
-      w.dairats.find(d => hasGivenDairaName(d))
+    const wilaya = data.find((w) =>
+      w.dairats.find((d) => hasGivenDairaName(d)),
     );
 
     return projectWilaya(wilaya, projection);
   };
-
 
 module.exports = getWilayaByDairaName;

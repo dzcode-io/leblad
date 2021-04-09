@@ -1,6 +1,6 @@
 const getPhoneCodesForWilaya = require('./getPhoneCodesForWilaya');
 
-const getPhoneCodeForWilaya = data =>
+const getPhoneCodeForWilaya = (data) =>
 /**
    * Takes a wilaya code (mattricule) and returns the first phone code in wilaya's phone code list.
    *

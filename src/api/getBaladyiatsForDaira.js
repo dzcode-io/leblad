@@ -2,7 +2,7 @@ const _hasName = require('../utils/hasName');
 
 const MIN_DAIRA_NAME_LENGTH = 3;
 
-const getBaladyiatsForDaira = data =>
+const getBaladyiatsForDaira = (data) =>
 /**
    * Takes a wilaya daira name and returns its baladyiats
    *
@@ -13,20 +13,20 @@ const getBaladyiatsForDaira = data =>
    * @returns { object[] | null } Returns All baladyiats for daira, or null
    */
 
-  daira => {
+  (daira) => {
     if (!daira || daira.trim().length < MIN_DAIRA_NAME_LENGTH) {
       return null;
     }
 
     const hasGivenDairaName = _hasName(daira.toLowerCase());
 
-    const wilaya = data.find(w =>
-      w.dairats.find(d => hasGivenDairaName(d))
+    const wilaya = data.find((w) =>
+      w.dairats.find((d) => hasGivenDairaName(d)),
     );
 
     if (!wilaya) return null;
 
-    const { baladyiats } = wilaya.dairats.find(dn => hasGivenDairaName(dn));
+    const { baladyiats } = wilaya.dairats.find((dn) => hasGivenDairaName(dn));
 
     return baladyiats || null;
   };

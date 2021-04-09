@@ -5,6 +5,7 @@ const WILAYA_COUNT = 48;
  * @param {Number} code wilaya code (matricule)
  * @returns {Boolean}
  */
-const isValidWilayaCode = code => Number.isInteger(code) && code > 0 && code <= WILAYA_COUNT;
+const isValidWilayaCode = (code) =>
+  Number.isInteger(code) && code > 0 && code <= WILAYA_COUNT;
 
 module.exports = isValidWilayaCode;

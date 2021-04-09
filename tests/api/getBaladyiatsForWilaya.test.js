@@ -8,8 +8,8 @@ describe('Get baladiyats for wilaya', () => {
           baladyiats: [
             {
               code: 3301,
-            }
-          ]
+            },
+          ],
         },
         {
           code: 3302,
@@ -19,8 +19,8 @@ describe('Get baladiyats for wilaya', () => {
             },
             {
               code: 3305,
-            }
-          ]
+            },
+          ],
         },
         {
           code: 3302,
@@ -30,8 +30,8 @@ describe('Get baladiyats for wilaya', () => {
             },
             {
               code: 3305,
-            }
-          ]
+            },
+          ],
         },
         {
           code: 3306,
@@ -44,11 +44,11 @@ describe('Get baladiyats for wilaya', () => {
             },
             {
               code: 3306,
-            }
-          ]
-        }
+            },
+          ],
+        },
       ],
-    }
+    },
   ];
 
   const baladyiaFiWilaya33 = [
@@ -59,13 +59,12 @@ describe('Get baladiyats for wilaya', () => {
     { code: 3305 },
     { code: 3303 },
     { code: 3304 },
-    { code: 3306 }
+    { code: 3306 },
   ];
 
   let getBaladyiatsForWilaya;
 
-
-  beforeEach(()=>{
+  beforeEach(() => {
     getBaladyiatsForWilaya = require('../../src/api/getBaladyiatsForWilaya');
   });
 
