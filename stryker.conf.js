@@ -6,6 +6,6 @@ module.exports = {
   packageManager: 'npm',
   reporters: ['html', 'clear-text', 'progress', 'dashboard'],
   testRunner: 'jest',
-  coverageAnalysis: 'off',
-  files: ['src/**/*.js', 'tests/**/*.js', 'data/*.*'],
+  coverageAnalysis: 'all',
+  ignorePatterns: ['**', '!src/**/*.js', '!tests/**/*.js', '!data/*.*'],
 };
