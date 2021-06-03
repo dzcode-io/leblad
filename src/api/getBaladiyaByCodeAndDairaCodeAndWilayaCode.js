@@ -1,9 +1,9 @@
 const projectBaladiya = require('../utils/projections/projectObject');
 const getBaladiyaByCodeAndDairaCodeAndWilayaCode = 
     /**
-   * Takes a wilaya mattricule and a daira code and return the baladyia.
+   * Takes a wilaya mattricule ,a daira code , bladiya code and return the baladyia.
    *
-   * @example Get a daira  by code and wilaya mattricule(mattricule:1, code:101, bcode:101)
+   * @example Get a baladiya  by code, daira code, and wilaya mattricule(mattricule:1, code:101, bcode:101)
    *
    * //returns {name : "ADRAR"}
    * getWilayaByBaladyiaName(1, 101,101)
