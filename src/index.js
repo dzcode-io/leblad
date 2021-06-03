@@ -16,7 +16,10 @@ const getBaladyiatsForWilaya = require('./api/getBaladyiatsForWilaya');
 const getBaladyiatsForDaira = require('./api/getBaladyiatsForDaira');
 const getWilayaByBaladyiaName = require('./api/getWilayaByBaladyiaName');
 const getDairaByBaladyiaName = require('./api/getDairaByBaladyiaName');
-
+const getDairaByCodeAndWilayaCode = require('./api/getDairaByCodeAndWilayaCode');
+const getBaladiyaByCodeAndDairaCodeAndWilayaCode = require('./api/getBaladiyaByCodeAndDairaCodeAndWilayaCode');
+const getBaldiyatsForDairaByCodeForWilayaByCode =  require('./api/getBaldiyatsForDairaByCodeForWilayaByCode');
+const getBaldiyaByCodeForWilaya = require('./api/getBaldiyaByCodeForWilaya');
 const data = require('../data/WilayaList.json');
 
 const _getData = () => [...data];
@@ -35,6 +38,10 @@ module.exports = {
   getBaladyiatsForDaira: getBaladyiatsForDaira(_getData()),
   getWilayaByBaladyiaName: getWilayaByBaladyiaName(_getData()),
   getDairaByBaladyiaName: getDairaByBaladyiaName(_getData()),
+  getDairaByCodeAndWilayaCode: getDairaByCodeAndWilayaCode(_getData()),
+  getBaladiyaByCodeAndDairaCodeAndWilayaCode: getBaladiyaByCodeAndDairaCodeAndWilayaCode(_getData()),
+  getBaldiyatsForDairaByCodeForWilayaByCode:getBaldiyatsForDairaByCodeForWilayaByCode(_getData()),
+  getBaldiyaByCodeForWilaya: getBaldiyaByCodeForWilaya(_getData()),
   utils: {
     projectObject,
     isValidWilayaCode,
