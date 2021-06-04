@@ -16,12 +16,12 @@ const getBaldiyatsForDairaByCodeForWilayaByCode = (data) =>
   (mattricule, code) => {
     const wilaya = data.find((w) => w.mattricule === mattricule);
     if (wilaya) {
-      daira = wilaya.dairats.find((d) => d.code === code);
-     
+      const daira = wilaya.dairats.find((d) => d.code === code);
+
       if(daira){
-        return daira.baladyiats
+        return daira.baladyiats;
       }
-      
+
     }
     return null;
   };

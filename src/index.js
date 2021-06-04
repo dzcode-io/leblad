@@ -40,7 +40,7 @@ module.exports = {
   getDairaByBaladyiaName: getDairaByBaladyiaName(_getData()),
   getDairaByCodeAndWilayaCode: getDairaByCodeAndWilayaCode(_getData()),
   getBaladiyaByCodeAndDairaCodeAndWilayaCode: getBaladiyaByCodeAndDairaCodeAndWilayaCode(_getData()),
-  getBaldiyatsForDairaByCodeForWilayaByCode:getBaldiyatsForDairaByCodeForWilayaByCode(_getData()),
+  getBaldiyatsForDairaByCodeForWilayaByCode: getBaldiyatsForDairaByCodeForWilayaByCode(_getData()),
   getBaldiyaByCodeForWilaya: getBaldiyaByCodeForWilaya(_getData()),
   utils: {
     projectObject,

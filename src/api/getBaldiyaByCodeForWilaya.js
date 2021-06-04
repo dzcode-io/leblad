@@ -12,7 +12,7 @@ const getBaldiyaByCodeForWilaya = (data) =>
    * @param { Number } mattricule wilaya code (mattricule)
    * @param { Number } code baladiya code (code)
    * @param { String[] } projection a list of Baladyia object attributes to keep
-   * @returns { Object[] | null } get baladiya's object 
+   * @returns { Object[] | null } get baladiya's object
    */
 
   (mattricule, code, projections) => {
@@ -23,10 +23,10 @@ const getBaldiyaByCodeForWilaya = (data) =>
         [],
       );
       if(baladyiats){
-        baladiya = baladyiats.find((w)=> w.code === code)
+        const baladiya = baladyiats.find((w)=> w.code === code);
         return projectBaladiya(baladiya, projections);
       }
-     
+
     }
     return null;
   };
