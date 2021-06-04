@@ -1,6 +1,6 @@
 const projectDaira = require('../utils/projections/projectObject');
 
-const getDairaByCodeAndWilayaCode = 
+const getDairaByCodeAndWilayaCode = (data)=>
     /**
    * Takes a wilaya mattricule and a daira code and return daira.
    *

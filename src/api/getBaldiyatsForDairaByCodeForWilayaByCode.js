@@ -1,4 +1,3 @@
-
 const getBaldiyatsForDairaByCodeForWilayaByCode = (data) =>
 /**
    * Takes a wilaya code (mattricule), daira code (code) and returns array of Baladiyates of wilaya.
@@ -14,12 +13,13 @@ const getBaldiyatsForDairaByCodeForWilayaByCode = (data) =>
    * @returns { Object[] | null } list of all baladiyas for wilaya
    */
 
-  (mattricule,code) => {
+  (mattricule, code) => {
     const wilaya = data.find((w) => w.mattricule === mattricule);
     if (wilaya) {
-      daira = data.find((w) => w.code === code);
+      daira = wilaya.dairats.find((d) => d.code === code);
+     
       if(daira){
-        return daira.baladiyats
+        return daira.baladyiats
       }
       
     }

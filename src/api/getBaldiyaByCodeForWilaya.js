@@ -1,3 +1,5 @@
+const projectBaladiya = require('../utils/projections/projectObject');
+
 const getBaldiyaByCodeForWilaya = (data) =>
 /**
    * Takes a wilaya code (mattricule) and a baladiya code  and return a baladiya

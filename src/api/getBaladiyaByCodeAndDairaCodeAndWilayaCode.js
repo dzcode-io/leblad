@@ -1,5 +1,5 @@
 const projectBaladiya = require('../utils/projections/projectObject');
-const getBaladiyaByCodeAndDairaCodeAndWilayaCode = 
+const getBaladiyaByCodeAndDairaCodeAndWilayaCode = (data) =>
     /**
    * Takes a wilaya mattricule ,a daira code , bladiya code and return the baladyia.
    *
@@ -19,7 +19,7 @@ const getBaladiyaByCodeAndDairaCodeAndWilayaCode =
         if (wilaya) {
             const daira = wilaya.dairats.find((d)=> d.code === code);
             if( daira){
-                const baladiya = daira.baladiyats.find((b)=> b.code === bcode)
+                const baladiya = daira.baladyiats.find((b)=> b.code === bcode)
                 return projectBaladiya(baladiya, projection);
             }
           
