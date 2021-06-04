@@ -26,6 +26,10 @@ describe("Le'Bled SDK", () => {
       getBaladyiatsForDaira: expect.any(Function),
       getWilayaByBaladyiaName: expect.any(Function),
       getDairaByBaladyiaName: expect.any(Function),
+      getDairaByCodeAndWilayaCode: expect.any(Function),
+      getBaladiyaByCodeAndDairaCodeAndWilayaCode: expect.any(Function),
+      getBaldiyatsForDairaByCodeForWilayaByCode: expect.any(Function),
+      getBaldiyaByCodeForWilaya: expect.any(Function),
       utils: {
         projectObject: expect.any(Function),
         isValidZipCode: expect.any(Function),
