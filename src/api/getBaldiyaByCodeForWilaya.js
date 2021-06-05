@@ -22,12 +22,16 @@ const getBaldiyaByCodeForWilaya = (data) =>
         (acc, daira) => [...acc, ...daira.baladyiats],
         [],
       );
-      if(baladyiats){
-        const baladiya = baladyiats.find((w)=> w.code === code);
+
+      const baladiya = baladyiats.find((w)=> w.code === code);
+      if (baladiya){
         return projectBaladiya(baladiya, projections);
       }
 
+
     }
+
+
     return null;
   };
 
