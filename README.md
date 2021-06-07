@@ -264,6 +264,98 @@ const { getDairaByBaladyiaName } = require('@dzcode-io/leblad');
 console.log(getDairaByBaladyiaName('ES SENIA')); // will print the daira object ({name: "ES SENIA"...})
 ```
 
+#### getBaladiyaByCodeAndDairaCodeAndWilayaCode(mattricule:number, code: number, bcode:number, projection?: string[])
+
+Takes a Wialya code , Daira code and  Baladyia code and returns a baladiya.
+
+**Arguments**
+
+- `mattricule: number` (**required**) the Wilaya id
+- `code: number` (**required**) the Daira id
+- `bcode: number` (**required**) the Baladiya id
+- `projection: string[]` (optional) Array of Wilaya Object attributes
+
+**Examples**
+
+```javascript
+const { getBaladiyaByCodeAndDairaCodeAndWilayaCode } = require('@dzcode-io/leblad');
+
+console.log(getBaladiyaByCodeAndDairaCodeAndWilayaCode(1,  101,  101)); // will print the daira object ({name: "ADRAR"...})
+```
+
+#### getBaladiyaByCodeAndDairaCodeAndWilayaCode(mattricule:number, code: number, bcode:number, projection?: string[])
+
+Takes a Wialya mattricule , Daira code and  Baladyia code and returns a baladiya.
+
+**Arguments**
+
+- `mattricule: number` (**required**) the Wilaya id
+- `code: number` (**required**) the Daira id
+- `bcode: number` (**required**) the Baladiya id
+- `projection: string[]` (optional) Array of Wilaya Object attributes
+
+**Examples**
+
+```javascript
+const { getBaladiyaByCodeAndDairaCodeAndWilayaCode } = require('@dzcode-io/leblad');
+
+console.log(getBaladiyaByCodeAndDairaCodeAndWilayaCode(1,  101,  101)); // will print the baladiya object ({name: "ADRAR"...})
+```
+
+#### getBaldiyaByCodeForWilaya(mattricule:number, code: number, projection?: string[])
+
+Takes a Wialya mattricule,  Baladyia code and returns a baladiya.
+
+**Arguments**
+
+- `mattricule: number` (**required**) the Wilaya id
+- `code: number` (**required**) the Baladiya id
+- `projection: string[]` (optional) Array of Baladiya Object attributes
+
+**Examples**
+
+```javascript
+const { getBaldiyaByCodeForWilaya } = require('@dzcode-io/leblad');
+
+console.log(getBaldiyaByCodeForWilaya(1,  121)); // will print the baldiya object ({name: "OULED AHMED TIMMI"...})
+```
+
+#### getBaldiyatsForDairaByCodeForWilayaByCode(mattricule:number, code: number, projection?: string[])
+
+Takes a Wialya mattricule and Daira code and returns a  list of baladiyats.
+
+**Arguments**
+
+- `mattricule: number` (**required**) the Wilaya id
+- `code: number` (**required**) the Daira id
+- `projection: string[]` (optional) Array of Baladiya Object attributes
+
+**Examples**
+
+```javascript
+const {  getBaldiyatsForDairaByCodeForWilayaByCode } = require('@dzcode-io/leblad');
+
+console.log(getBaldiyatsForDairaByCodeForWilayaByCode(1,  101)); // will print the list of baldiyats ([{name: "OULED AHMED TIMMI"...}, {....} , {....} ...])
+```
+
+#### getDairaByCodeAndWilayaCode(mattricule:number, code: number, projection?: string[])
+
+Takes a Wialya mattricule and Daira code and returns a  daira.
+
+**Arguments**
+
+- `mattricule: number` (**required**) the Wilaya id
+- `code: number` (**required**) the Daira id
+- `projection: string[]` (optional) Array of Daira Object attributes
+
+**Examples**
+
+```javascript
+const {  getDairaByCodeAndWilayaCode  } = require('@dzcode-io/leblad');
+
+console.log(getDairaByCodeAndWilayaCode (1,  103)); // will print the daira object ({name: "CHAROUINE"...},)
+```
+
 ## Helper methods
 
 #### projectObject(data: (object|array), projection?: string[])
