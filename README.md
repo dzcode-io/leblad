@@ -181,6 +181,22 @@ const { getBaladyiatsForDaira } = require('@dzcode-io/leblad');
 console.log(getBaladyiatsForDaira('ORAN')); // will return baladyiats for daira of "Oran"
 ```
 
+#### getBaladyiatsForDairaCode(dairaCode: Number)
+
+Takes a daira code and returns the matching baladyiats.
+
+**Arguments**
+
+- `daira: number` (**required**) the Wilaya's "dairaCode" in en|fr|ar
+
+**Examples**
+
+```javascript
+const { getBaladyiatsForDairaCode } = require('@dzcode-io/leblad');
+
+console.log(getBaladyiatsForDairaCode(31)); // will return baladyiats for daira of "Oran"
+```
+
 #### getPhoneCodesForWilaya(wilayaCode: number)
 
 Takes a wilaya code (matricule) and returns a list of phone codes for given wilaya
