@@ -3,9 +3,7 @@
 [<img src="https://img.shields.io/badge/Join%20us%20on%20Slack-@dzCode.io-yellow.svg?logo=slack">](https://join.slack.com/t/dzcode/shared_invite/zt-ek9kscb7-m8z_~cBjX79l~uchuABPFQ) [![npm](https://img.shields.io/npm/v/@dzcode-io/leblad)](https://www.npmjs.com/package/@dzcode-io/leblad) [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) [![codecov](https://codecov.io/gh/dzcode-io/leblad/branches/branch/develop/graph/badge.svg)](https://codecov.io/gh/dzcode-io/leblad/branches) [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fdzcode-io%2Fleblad%2Fdevelop)](https://dashboard.stryker-mutator.io/reports/github.com/dzcode-io/leblad/develop) [![Known Vulnerabilities](https://snyk.io/test/github/dzcode-io/leblad/badge.svg)](https://snyk.io/test/github/dzcode-io/leblad) [![CodeQL](https://github.com/dzcode-io/leblad/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/dzcode-io/leblad/actions/workflows/codeql-analysis.yml)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A library providing a list of Algerian administrative areas with many useful APIs.
@@ -367,23 +365,24 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://fcmam5.me/"><img src="https://avatars3.githubusercontent.com/u/9090674?v=4" width="100px;" alt=""/><br /><sub><b>Fortas Abdeldjalil</b></sub></a><br /><a href="#maintenance-Fcmam5" title="Maintenance">🚧</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Fcmam5" title="Code">💻</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AFcmam5" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="http://zakiii.com"><img src="https://avatars2.githubusercontent.com/u/20110076?v=4" width="100px;" alt=""/><br /><sub><b>Zakaria Mansouri</b></sub></a><br /><a href="#tool-ZibanPirate" title="Tools">🔧</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AZibanPirate" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="http://oussamabouchikhi.github.io"><img src="https://avatars0.githubusercontent.com/u/45850487?v=4" width="100px;" alt=""/><br /><sub><b>Oussama Bouchikhi</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=oussamabouchikhi" title="Code">💻</a></td>
-    <td align="center"><a href="http://abachi.github.io"><img src="https://avatars3.githubusercontent.com/u/12300606?v=4" width="100px;" alt=""/><br /><sub><b>Nasser Abachi</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=abachi" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/anuragsati"><img src="https://avatars2.githubusercontent.com/u/52669445?v=4" width="100px;" alt=""/><br /><sub><b>Anurag sati</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=anuragsati" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/AmineVolk"><img src="https://avatars1.githubusercontent.com/u/37228315?v=4" width="100px;" alt=""/><br /><sub><b>HamdiAmine</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AmineVolk" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.keefer.tech"><img src="https://avatars1.githubusercontent.com/u/16760467?v=4" width="100px;" alt=""/><br /><sub><b>xxKeefer</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=xxKeefer" title="Code">💻</a></td>
+    <td align="center"><a href="https://fcmam5.me/"><img src="https://avatars3.githubusercontent.com/u/9090674?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fortas Abdeldjalil</b></sub></a><br /><a href="#maintenance-Fcmam5" title="Maintenance">🚧</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Fcmam5" title="Code">💻</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AFcmam5" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://zakiii.com"><img src="https://avatars2.githubusercontent.com/u/20110076?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zakaria Mansouri</b></sub></a><br /><a href="#tool-ZibanPirate" title="Tools">🔧</a> <a href="https://github.com/dzcode-io/leblad/pulls?q=is%3Apr+reviewed-by%3AZibanPirate" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://oussamabouchikhi.github.io"><img src="https://avatars0.githubusercontent.com/u/45850487?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Oussama Bouchikhi</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=oussamabouchikhi" title="Code">💻</a></td>
+    <td align="center"><a href="http://abachi.github.io"><img src="https://avatars3.githubusercontent.com/u/12300606?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nasser Abachi</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=abachi" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/anuragsati"><img src="https://avatars2.githubusercontent.com/u/52669445?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anurag sati</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=anuragsati" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AmineVolk"><img src="https://avatars1.githubusercontent.com/u/37228315?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HamdiAmine</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AmineVolk" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.keefer.tech"><img src="https://avatars1.githubusercontent.com/u/16760467?v=4?s=100" width="100px;" alt=""/><br /><sub><b>xxKeefer</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=xxKeefer" title="Code">💻</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
-    <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Redaloukil" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/spertch9a"><img src="https://avatars3.githubusercontent.com/u/16373348?v=4" width="100px;" alt=""/><br /><sub><b>Fortas Oussama Ilyes</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=spertch9a" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/AMTazi"><img src="https://avatars1.githubusercontent.com/u/17519395?v=4" width="100px;" alt=""/><br /><sub><b>Abdelmounaim TAZI</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AMTazi" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/joeylnguyen"><img src="https://avatars2.githubusercontent.com/u/59431792?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joey Nguyen</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=joeylnguyen" title="Code">💻</a></td>
+    <td align="center"><a href="https://redaloukil.github.io/"><img src="https://avatars0.githubusercontent.com/u/25663785?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LOUKIL Mohamed Reda</b></sub></a><br /><a href="#ideas-Redaloukil" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dzcode-io/leblad/commits?author=Redaloukil" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/spertch9a"><img src="https://avatars3.githubusercontent.com/u/16373348?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fortas Oussama Ilyes</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=spertch9a" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AMTazi"><img src="https://avatars1.githubusercontent.com/u/17519395?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abdelmounaim TAZI</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=AMTazi" title="Code">💻</a></td>
+    <td align="center"><a href="http://abderrahmane-mustapha.codes"><img src="https://avatars.githubusercontent.com/u/34008130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Toumi abderrahmane</b></sub></a><br /><a href="https://github.com/dzcode-io/leblad/commits?author=abderrahmaneMustapha" title="Code">💻</a> <a href="#example-abderrahmaneMustapha" title="Examples">💡</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
